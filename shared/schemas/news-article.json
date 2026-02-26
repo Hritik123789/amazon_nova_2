@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "News Article",
+  "description": "Schema for news article data",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique article identifier"
+    },
+    "title": {
+      "type": "string",
+      "description": "Article headline or title"
+    },
+    "summary": {
+      "type": "string",
+      "description": "AI-generated summary of the article"
+    },
+    "source": {
+      "type": "string",
+      "description": "News source or publication name"
+    },
+    "published_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Publication timestamp (ISO8601 format)"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the full article"
+    },
+    "relevance_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Relevance score from 0 to 1"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["local", "business", "safety", "events", "politics"],
+      "description": "Article category"
+    },
+    "location": {
+      "type": "string",
+      "description": "Geographic location the article is about"
+    },
+    "image_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to article image (optional)"
+    }
+  },
+  "required": ["id", "title", "summary", "source", "published_at", "url", "relevance_score", "category", "location"]
+}

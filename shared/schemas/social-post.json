@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Social Post",
+  "description": "Schema for social media post data",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique post identifier"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["facebook", "reddit", "nextdoor", "twitter"],
+      "description": "Social media platform source"
+    },
+    "author": {
+      "type": "string",
+      "description": "Username or display name of the post author"
+    },
+    "content": {
+      "type": "string",
+      "description": "Text content of the post"
+    },
+    "sentiment": {
+      "type": "string",
+      "enum": ["positive", "neutral", "negative"],
+      "description": "Sentiment analysis result"
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of identified topics or keywords"
+    },
+    "posted_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the post was created (ISO8601 format)"
+    },
+    "engagement": {
+      "type": "object",
+      "properties": {
+        "likes": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of likes or upvotes"
+        },
+        "comments": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of comments or replies"
+        },
+        "shares": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of shares or reposts"
+        }
+      },
+      "required": ["likes", "comments", "shares"]
+    },
+    "location_mentioned": {
+      "type": "string",
+      "description": "Location mentioned in the post (optional)"
+    },
+    "coordinates": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90,
+          "description": "Latitude coordinate (optional)"
+        },
+        "lng": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180,
+          "description": "Longitude coordinate (optional)"
+        }
+      }
+    }
+  },
+  "required": ["id", "source", "author", "content", "sentiment", "topics", "posted_at", "engagement"]
+}

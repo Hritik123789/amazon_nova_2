@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Permit",
+  "description": "Schema for city permit data",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique permit identifier"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["building", "liquor", "zoning", "demolition"],
+      "description": "Type of permit"
+    },
+    "address": {
+      "type": "string",
+      "description": "Street address of the permit location"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the permitted work"
+    },
+    "filed_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date the permit was filed (ISO8601 format)"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "approved", "rejected", "completed"],
+      "description": "Current status of the permit"
+    },
+    "coordinates": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90,
+          "description": "Latitude coordinate"
+        },
+        "lng": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180,
+          "description": "Longitude coordinate"
+        }
+      },
+      "required": ["lat", "lng"]
+    },
+    "distance_miles": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Distance from user location in miles"
+    },
+    "applicant": {
+      "type": "string",
+      "description": "Name of the permit applicant"
+    },
+    "estimated_cost": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Estimated cost of the project (optional)"
+    },
+    "completion_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Expected or actual completion date (ISO8601 format, optional)"
+    }
+  },
+  "required": ["id", "type", "address", "description", "filed_date", "status", "coordinates", "distance_miles", "applicant"]
+}
