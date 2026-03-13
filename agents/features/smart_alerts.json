@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-03-11T00:12:48.323553",
+  "user_location": {
+    "latitude": 19.076,
+    "longitude": 72.8777,
+    "name": "Mumbai"
+  },
+  "alert_count": 2,
+  "alerts": [
+    {
+      "alert_id": "safety-news-16",
+      "type": "safety",
+      "title": "Traffic/Safety Alert",
+      "message": "Metro 3 last-mile bus plan hits a speed bump as services halved after failing to attract enough riders",
+      "location": "Mumbai",
+      "priority": "high",
+      "source": "news",
+      "url": "https://www.hindustantimes.com/cities/mumbai-news/metro-3-last-mile-bus-plan-hits-a-speed-bump-as-services-halved-after-failing-to-attract-enough-riders-101772909399795.html",
+      "timestamp": "2026-03-11T00:12:46.960383",
+      "priority_score": 10,
+      "priority_reason": "Safety concern"
+    },
+    {
+      "alert_id": "safety-news-20",
+      "type": "safety",
+      "title": "Traffic/Safety Alert",
+      "message": "Traffic-choked Ghodbunder Road stretch handed over to Thane civic body for maintenance",
+      "location": "Mumbai",
+      "priority": "high",
+      "source": "news",
+      "url": "https://www.hindustantimes.com/cities/mumbai-news/trafficchoked-ghodbunder-road-stretch-handed-over-to-thane-civic-body-for-maintenance-101772909039714.html",
+      "timestamp": "2026-03-11T00:12:46.960383",
+      "priority_score": 10,
+      "priority_reason": "Safety concern"
+    }
+  ]
+}

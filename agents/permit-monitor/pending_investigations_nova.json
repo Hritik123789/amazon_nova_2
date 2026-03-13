@@ -1,0 +1,16 @@
+[
+  {
+    "investigation_id": "INV-015",
+    "source": "Nova News Agent",
+    "title": "Man held for posing as MHA minister’s aide",
+    "location": "Mumbai (General)",
+    "action": "Other",
+    "priority": "LOW",
+    "category": "Civic",
+    "relevance_score": 5,
+    "news_url": "https://www.hindustantimes.com/cities/mumbai-news/man-held-for-posing-as-mha-minister-s-aide-101772909341727.html",
+    "created_at": "2026-03-10T23:51:56.316981",
+    "status": "Pending Investigation",
+    "analyzed_by": "Amazon Nova 2 Lite"
+  }
+]

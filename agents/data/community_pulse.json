@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-03-13T23:22:13.612014",
+  "target_area": "Mumbai",
+  "basic_topics": {
+    "top_social_topics": [
+      {
+        "topic": "airport_transport",
+        "mentions": 6,
+        "engagement": 1316,
+        "trend_score": 10.0
+      },
+      {
+        "topic": "metro_transport",
+        "mentions": 9,
+        "engagement": 84,
+        "trend_score": 0.0
+      }
+    ],
+    "top_news_topics": [
+      {
+        "topic": "civic",
+        "mentions": 2
+      },
+      {
+        "topic": "upholds",
+        "mentions": 2
+      },
+      {
+        "topic": "discharge",
+        "mentions": 2
+      },
+      {
+        "topic": "duped",
+        "mentions": 2
+      },
+      {
+        "topic": "metro_transport",
+        "mentions": 2
+      },
+      {
+        "topic": "network",
+        "mentions": 2
+      },
+      {
+        "topic": "chief",
+        "mentions": 1
+      },
+      {
+        "topic": "directs",
+        "mentions": 1
+      },
+      {
+        "topic": "strict",
+        "mentions": 1
+      },
+      {
+        "topic": "action",
+        "mentions": 1
+      }
+    ],
+    "news_categories": [
+      {
+        "category": "Civic",
+        "count": 21
+      },
+      {
+        "category": "Traffic",
+        "count": 4
+      },
+      {
+        "category": "Real Estate",
+        "count": 3
+      }
+    ],
+    "sentiment_distribution": {
+      "positive": 1,
+      "neutral": 16,
+      "negative": 3,
+      "positive_pct": 5.0,
+      "neutral_pct": 80.0,
+      "negative_pct": 15.0
+    },
+    "total_social_posts": 20,
+    "total_news_articles": 28,
+    "total_engagement": 2066
+  },
+  "insights": {
+    "trending_topics": [
+      {
+        "topic": "airport_transport",
+        "trend_score": 10,
+        "category": "transport",
+        "sentiment": "neutral",
+        "description": "Frequent mentions (6) combined with high engagement (1316) suggest growing public concern about airport connectivity."
+      },
+      {
+        "topic": "metro_transport",
+        "trend_score": 0,
+        "category": "transport",
+        "sentiment": "neutral",
+        "description": "Mentioned 9 times, but with relatively low engagement (84), indicating a lower level of public interest or discussion."
+      }
+    ],
+    "community_concerns": [
+      {
+        "concern": "airport connectivity",
+        "severity": "high",
+        "affected_areas": [
+          "Western Suburbs",
+          "Central Mumbai"
+        ],
+        "recommendation": "Implement real-time updates and improve communication regarding flight schedules and delays at Chhatrapati Shivaji Maharaj International Airport."
+      },
+      {
+        "concern": "metro reliability",
+        "severity": "medium",
+        "affected_areas": [
+          "Central Mumbai",
+          "Eastern Suburbs"
+        ],
+        "recommendation": "Increase frequency of metro services and address delays to improve reliability and commuter satisfaction."
+      }
+    ],
+    "overall_sentiment": {
+      "mood": "neutral",
+      "key_drivers": [
+        "airport_transport",
+        "metro_transport"
+      ],
+      "notable_changes": [
+        "High engagement on airport transport issues and low engagement on metro transport"
+      ]
+    }
+  },
+  "metadata": {
+    "tokens_used": 1384,
+    "estimated_cost": 0.00014316
+  }
+}

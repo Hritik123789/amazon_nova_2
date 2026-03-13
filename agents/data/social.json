@@ -1,0 +1,523 @@
+{
+  "collected_at": "2026-03-11T21:43:30.208595",
+  "source_count": 2,
+  "post_count": 20,
+  "sources": [
+    "reddit_r/mumbai",
+    "reddit_r/india"
+  ],
+  "sentiment_summary": {
+    "positive": 5.0,
+    "neutral": 80.0,
+    "negative": 15.0,
+    "total_posts": 20
+  },
+  "trending_topics": [
+    {
+      "topic": "Mumbai",
+      "count": 2
+    },
+    {
+      "topic": "hiring",
+      "count": 1
+    },
+    {
+      "topic": "Investors Relation",
+      "count": 1
+    },
+    {
+      "topic": "travel",
+      "count": 1
+    },
+    {
+      "topic": "metro",
+      "count": 1
+    },
+    {
+      "topic": "affordable area",
+      "count": 1
+    },
+    {
+      "topic": "RailOne",
+      "count": 1
+    },
+    {
+      "topic": "UTS app",
+      "count": 1
+    },
+    {
+      "topic": "ticket booking",
+      "count": 1
+    },
+    {
+      "topic": "birthday party",
+      "count": 1
+    }
+  ],
+  "posts": [
+    {
+      "id": "1rqwp8u",
+      "source": "reddit_r/mumbai",
+      "author": "PerceptionWise5445",
+      "title": "Hiring for Multiple Roles in Investors Relation.",
+      "content": "Hi People, \n\nI require an IR Team for my team, people with relevant experience can DM me their resume or CV. I'll revert back on the DM and you'll receive a call by Monday or Tuesday from the HR for initial screening. \n\nRequired Experience :- 1 - 7 years in Wealth or AMC or Wealth Operations Role.\n\nPay:- Salary no bar for right candidate and please be realistic. Its a role based in Mumbai in One BKC. ",
+      "url": "https://reddit.com/r/mumbai/comments/1rqwp8u/hiring_for_multiple_roles_in_investors_relation/",
+      "created_utc": 1773242485.0,
+      "timestamp": "2026-03-11T20:51:25",
+      "engagement": {
+        "upvotes": 1,
+        "downvotes": 0,
+        "comments": 2,
+        "score": 1
+      },
+      "subreddit": "mumbai",
+      "flair": "Careers",
+      "sentiment": "neutral",
+      "topics": [
+        "hiring",
+        "Investors Relation",
+        "Mumbai"
+      ],
+      "summary": "A recruitment post for an IR team in Mumbai, seeking candidates with 1-7 years of experience in Wealth or AMC or Wealth Operations Role."
+    },
+    {
+      "id": "1rqwaet",
+      "source": "reddit_r/mumbai",
+      "author": "cute-littleKenAdams",
+      "title": "Can I travel from Panvel or some affordable area to vile parle on a daily basis using metro",
+      "content": "",
+      "url": "https://reddit.com/r/mumbai/comments/1rqwaet/can_i_travel_from_panvel_or_some_affordable_area/",
+      "created_utc": 1773241544.0,
+      "timestamp": "2026-03-11T20:35:44",
+      "engagement": {
+        "upvotes": 1,
+        "downvotes": 0,
+        "comments": 0,
+        "score": 1
+      },
+      "subreddit": "mumbai",
+      "flair": "AskMumbai",
+      "sentiment": "neutral",
+      "topics": [
+        "travel",
+        "metro",
+        "affordable area"
+      ],
+      "summary": "A user is inquiring about the possibility of traveling from Panvel or another affordable area to Vile Parle using the metro on a daily basis."
+    },
+    {
+      "id": "1rqw4k0",
+      "source": "reddit_r/mumbai",
+      "author": "Attrob",
+      "title": "RailOne - Not able to book local tickets",
+      "content": "Earlier, when the UTS app was active, I was able to book local train tickets using both UTS and RailOne without any issues.\n\nBut ever since UTS was shut down, I haven’t been able to book tickets through RailOne anymore. Every time I try, a pop-up error appears.\nHas anyone else faced this issue? If yes, were you able to fix it? What worked for you?\n",
+      "url": "https://reddit.com/r/mumbai/comments/1rqw4k0/railone_not_able_to_book_local_tickets/",
+      "created_utc": 1773241195.0,
+      "timestamp": "2026-03-11T20:29:55",
+      "engagement": {
+        "upvotes": 3,
+        "downvotes": 0,
+        "comments": 4,
+        "score": 3
+      },
+      "subreddit": "mumbai",
+      "flair": "General",
+      "sentiment": "negative",
+      "topics": [
+        "RailOne",
+        "UTS app",
+        "ticket booking"
+      ],
+      "summary": "The user is experiencing issues with booking local train tickets through RailOne since the UTS app was shut down."
+    },
+    {
+      "id": "1rqw2lq",
+      "source": "reddit_r/mumbai",
+      "author": "goddessof-dusk",
+      "title": "Birthday Party under 10K",
+      "content": "Im F22, and ill be inviting around 9 people for my birthday. Now my budget is around 10k. And everyone is going to drink. \n\nShould i just book an AIRBNB for 5-6K and rest spend on some cheap alcohol and food like pizza hut and momos and frozen chicken nuggets etc.\n\nOR is there any restaurant where i can accommodate everyone under 10k with food and drinks. \n\nPlease suggest fairly good restaurants, not too cheap nor too expensive. \n\nPersonally i feel people would enjoy more in airbnb but the quality of food/drinks would be better in restaurant.",
+      "url": "https://reddit.com/r/mumbai/comments/1rqw2lq/birthday_party_under_10k/",
+      "created_utc": 1773241069.0,
+      "timestamp": "2026-03-11T20:27:49",
+      "engagement": {
+        "upvotes": 1,
+        "downvotes": 0,
+        "comments": 4,
+        "score": 1
+      },
+      "subreddit": "mumbai",
+      "flair": "General",
+      "sentiment": "neutral",
+      "topics": [
+        "birthday party",
+        "budget",
+        "restaurants"
+      ],
+      "summary": "The post discusses planning a birthday party on a budget of 10K, considering options like booking an Airbnb or finding a suitable restaurant."
+    },
+    {
+      "id": "1rqw2hq",
+      "source": "reddit_r/mumbai",
+      "author": "Global_Emphasis_6407",
+      "title": "Flat for sale in Dahisar East",
+      "content": "Hi all, I’m looking to sell my 2bhk flat 624 sq ft about 6 years old in a high rise building, it’s on the 19th floor with open view of the national park. It is in Dahisar East, with metro station about 800 mts away. If any genuine buyers pls DM me. ",
+      "url": "https://reddit.com/r/mumbai/comments/1rqw2hq/flat_for_sale_in_dahisar_east/",
+      "created_utc": 1773241062.0,
+      "timestamp": "2026-03-11T20:27:42",
+      "engagement": {
+        "upvotes": 1,
+        "downvotes": 0,
+        "comments": 3,
+        "score": 1
+      },
+      "subreddit": "mumbai",
+      "flair": "General",
+      "sentiment": "neutral",
+      "topics": [
+        "flat for sale",
+        "Dahisar East",
+        "metro station"
+      ],
+      "summary": "A person is advertising a 2 BHK flat for sale in Dahisar East with details about its location and amenities."
+    },
+    {
+      "id": "1rqvoq2",
+      "source": "reddit_r/mumbai",
+      "author": "Unique_Inevitable_27",
+      "title": "Just a normal Mumbai moment",
+      "content": "Sometimes a simple frame says a lot about the city.",
+      "url": "https://reddit.com/r/mumbai/comments/1rqvoq2/just_a_normal_mumbai_moment/",
+      "created_utc": 1773240210.0,
+      "timestamp": "2026-03-11T20:13:30",
+      "engagement": {
+        "upvotes": 88,
+        "downvotes": 0,
+        "comments": 2,
+        "score": 88
+      },
+      "subreddit": "mumbai",
+      "flair": "Photography",
+      "sentiment": "neutral",
+      "topics": [
+        "Mumbai",
+        "moment",
+        "city"
+      ],
+      "summary": "A reflection on a simple yet meaningful moment in Mumbai."
+    },
+    {
+      "id": "1rqvbgg",
+      "source": "reddit_r/mumbai",
+      "author": "gamescape__",
+      "title": "Looking for Social Media Manager at Gamescape!",
+      "content": "Looking for a Social Media Manager + Video Creator for a Gaming Studio (Navi Mumbai)\n\nHii everyone!\n\nWe are a premium gaming studio in Navi Mumbai and we’re looking for someone who genuinely enjoys being around gaming, people, and content creation to join us as a Social Media Manager + Video Content Creator.\n\nThis role is very hands-on. You’ll be around the action inside the venue capturing matches, reactions, and the overall vibe that makes the place fun\n\nWe already have an in house ideation team that comes up with concepts and ideas. What we need is someone who can bring those ideas to life through shooting, editing, and publishing short-form video content.\n\nMost of the content will be for Instagram Reels and YouTube Shorts.\n\nIf you enjoy filming real people having fun, competitive moments, gaming setups, behind the scenes footage, and turning that into engaging videos, you’ll probably enjoy this role.\n\nWhat you’ll be doing\n\n\\~ Shooting short-form content inside the venue\n\n\\~ Editing reels and shorts with good pacing and hooks\n\n\\~ Working with our team to execute content ideas\n\n\\~ Posting and managing content schedules\n\n\\~ Keeping the overall content quality consistent\n\nWhat we’re looking for\n\n\\~ Someone who already creates social media video content\n\n\\~ You should have your own basic shooting setup I.e. a good phone or camera, mic, basic lights etc\n\n\\~ Be Comfortable with editing tools like Premiere Pro, Final Cut, CapCut or similar\n\n\\~ Have a Good understanding of social media formats and hooks\n\n\\~ Be Comfortable working in a live environment with people and gaming setups\n\nIt is a Bonus if\n\n\\~ You like gaming or gaming culture\n\n\\~ You’ve worked with entertainment, lifestyle, events, or creator content before\n\n\\~ You understand thumbnails, graphics, or simple design\n\nThis role can be full-time or freelance, but it is an on-location role in Navi Mumbai.\n\nYour Salary will depend on your work and portfolio.\n\nIf this sounds interesting, please send over:\n\n\\~ Your resume\n\n\\~ Links to your content or portfolio\n\n\\~ Any social media pages you’ve worked on\n\nWe are looking forward to meeting someone who enjoys creating content as much as we enjoy building this space!",
+      "url": "https://reddit.com/r/mumbai/comments/1rqvbgg/looking_for_social_media_manager_at_gamescape/",
+      "created_utc": 1773239390.0,
+      "timestamp": "2026-03-11T19:59:50",
+      "engagement": {
+        "upvotes": 2,
+        "downvotes": 0,
+        "comments": 1,
+        "score": 2
+      },
+      "subreddit": "mumbai",
+      "flair": "Careers",
+      "sentiment": "positive",
+      "topics": [
+        "job opportunity",
+        "social media",
+        "gaming"
+      ],
+      "summary": "A gaming studio in Navi Mumbai is seeking a Social Media Manager + Video Content Creator."
+    },
+    {
+      "id": "1rqv6y8",
+      "source": "reddit_r/mumbai",
+      "author": "Lanky_Wash6220",
+      "title": "Hotel suggestions for single night stay in bandra west",
+      "content": "Any good suggestion for good hotel stay in bandra for tonight within 3 to 4 k per night \n",
+      "url": "https://reddit.com/r/mumbai/comments/1rqv6y8/hotel_suggestions_for_single_night_stay_in_bandra/",
+      "created_utc": 1773239101.0,
+      "timestamp": "2026-03-11T19:55:01",
+      "engagement": {
+        "upvotes": 1,
+        "downvotes": 0,
+        "comments": 0,
+        "score": 1
+      },
+      "subreddit": "mumbai",
+      "flair": "General",
+      "sentiment": "neutral",
+      "topics": [
+        "hotel",
+        "Bandra West",
+        "stay"
+      ],
+      "summary": "The user is seeking hotel suggestions for a single night stay in Bandra West within a budget of 3 to 4 thousand per night."
+    },
+    {
+      "id": "1rqv2bx",
+      "source": "reddit_r/mumbai",
+      "author": "shut-it-clown",
+      "title": "How long does normal passport take to process at RPO Mumbai?",
+      "content": "I need my passport urgently as my whole medical career depends on it. Police verification got cleared after giving bribes and I need an insider who can speed up my process at the RPO. Ready to pay bribe or whatever is needed. Any suggestions? Appointment dates are 2 months away and I have 7 days before I get expelled from my university.",
+      "url": "https://reddit.com/r/mumbai/comments/1rqv2bx/how_long_does_normal_passport_take_to_process_at/",
+      "created_utc": 1773238801.0,
+      "timestamp": "2026-03-11T19:50:01",
+      "engagement": {
+        "upvotes": 0,
+        "downvotes": 0,
+        "comments": 0,
+        "score": 0
+      },
+      "subreddit": "mumbai",
+      "flair": "General",
+      "sentiment": "negative",
+      "topics": [
+        "passport processing",
+        "bribery",
+        "urgency"
+      ],
+      "summary": "A person is seeking urgent help to expedite their passport processing at RPO Mumbai due to an impending expulsion from university and the critical need for their passport for their medical career."
+    },
+    {
+      "id": "1rqurja",
+      "source": "reddit_r/mumbai",
+      "author": "Stunning_Media_6705",
+      "title": "HELP NEEDED: Mainstreet Marketplace (Bandra) holding my money hostage. 30+ days, no delivery, refusing refund. Anyone in Mumbai can help?",
+      "content": "Hi everyone, I’m reaching out to the Mumbai community because I’m at my wit's end with **Mainstreet Marketplace** (the sneaker/streetwear store in Bandra/Santacruz).\n\nI ordered a watch  over 30 days ago. They promised delivery in 15 days. Since then:\n\n* **Broken Promises:** I’ve been told \"it’s shipping tomorrow\" at least three times. Still no tracking ID.\n* **Refund Refusal:** They are flat-out refusing a cash refund to my original payment method, insisting I take **store credit** only. Why would I want credit for a store that doesn't deliver?\n* **Ghosting:** They’ve stopped responding to WhatsApp and calls.\n\n**I NEED YOUR HELP:**\n\n1. **Local Context:** Has anyone else in Mumbai dealt with their Bandra store recently? Is there a specific manager or person I should talk to who actually gets things done?\n2. **In-Person Pressure:** Since I’m not currently able to visit their Perry Cross Road store, has anyone had success by showing up in person? Does that actually force them to process a refund?\n3. **Owner/Staff Contact:** If anyone has a direct escalation email or knows someone working there, please DM me.\n\n**WARNING:** If you’re thinking of buying from them, DON'T. They do not respect deadlines, they have zero customer service, and they will trap your money in \"store credit\" indefinitely.\n\nHas anyone managed to get a **CASH refund** from them after they defaulted on delivery? Any advice on how to handle these guys locally would be huge.",
+      "url": "https://reddit.com/r/mumbai/comments/1rqurja/help_needed_mainstreet_marketplace_bandra_holding/",
+      "created_utc": 1773238134.0,
+      "timestamp": "2026-03-11T19:38:54",
+      "engagement": {
+        "upvotes": 1,
+        "downvotes": 0,
+        "comments": 0,
+        "score": 1
+      },
+      "subreddit": "mumbai",
+      "flair": "General",
+      "sentiment": "negative",
+      "topics": [
+        "Mainstreet Marketplace",
+        "delivery",
+        "refund"
+      ],
+      "summary": "A Mumbai resident is seeking help from the community regarding a failed delivery and refund from Mainstreet Marketplace in Bandra."
+    },
+    {
+      "id": "1rqug2z",
+      "source": "reddit_r/india",
+      "author": "Raj_Valiant3011",
+      "title": "Darwin Labs co-founder intercepted at Mumbai airport, arrested by CBI in GainBitcoin cryptocurrency fraud case",
+      "content": "",
+      "url": "https://reddit.com/r/india/comments/1rqug2z/darwin_labs_cofounder_intercepted_at_mumbai/",
+      "created_utc": 1773237395.0,
+      "timestamp": "2026-03-11T19:26:35",
+      "engagement": {
+        "upvotes": 2,
+        "downvotes": 0,
+        "comments": 0,
+        "score": 2
+      },
+      "subreddit": "india",
+      "flair": "Media Matters",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Darwin Labs co-founder intercepted at Mumbai airport, arrested by CBI in GainBitcoin cryptocurrency fraud case"
+    },
+    {
+      "id": "1rp70ih",
+      "source": "reddit_r/india",
+      "author": "Sea_Pair_1273",
+      "title": "Shortage of LPG cooking gas engulfs Mumbai, supply of commercial cylinders halted, say dealers | Mumbai News - The Times of India",
+      "content": "",
+      "url": "https://reddit.com/r/india/comments/1rp70ih/shortage_of_lpg_cooking_gas_engulfs_mumbai_supply/",
+      "created_utc": 1773078123.0,
+      "timestamp": "2026-03-09T23:12:03",
+      "engagement": {
+        "upvotes": 251,
+        "downvotes": 0,
+        "comments": 38,
+        "score": 251
+      },
+      "subreddit": "india",
+      "flair": "Politics",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Shortage of LPG cooking gas engulfs Mumbai, supply of commercial cylinders halted, say dealers | Mumbai News - The Times of India"
+    },
+    {
+      "id": "1rnda0d",
+      "source": "reddit_r/india",
+      "author": "Dull_Department_2966",
+      "title": "Bombay High Court says prayers at any spot not a religious right, denies permission to namaz near Mumbai airport citing security",
+      "content": "",
+      "url": "https://reddit.com/r/india/comments/1rnda0d/bombay_high_court_says_prayers_at_any_spot_not_a/",
+      "created_utc": 1772898617.0,
+      "timestamp": "2026-03-07T21:20:17",
+      "engagement": {
+        "upvotes": 1234,
+        "downvotes": 0,
+        "comments": 80,
+        "score": 1234
+      },
+      "subreddit": "india",
+      "flair": "Law &amp; Courts",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Bombay High Court says prayers at any spot not a religious right, denies permission to namaz near Mumbai airport citing security"
+    },
+    {
+      "id": "1rnaslr",
+      "source": "reddit_r/india",
+      "author": "gogohunting",
+      "title": "Is an Online MBA from NMIMS (NGASCE) worth it? Need honest advice.",
+      "content": "Hey guys,\n\nI’m currently working at **Amazon** in an Operations/Process role (been here about 4 years). Before this, I was at **Accenture**.\n\nOn paper, my career looks good—I’ve got the big brands and my metrics are solid (99.8% accuracy even with high volumes). But I feel stuck. I recently applied for some Client Service/Project Management roles at firms like Guidepoint and Native, and the feedback was basically: *\"You’re great at operations, but we need someone with more 'commercial/revenue' sense.\"*\n\nI can't quit my job for a full-time MBA (bills to pay), so I’m looking at the **NMIMS Online MBA (NGASCE)**.\n\n**I need the honest truth from people who’ve actually done it:**\n\n1. **Will recruiters care?** Does having \"NMIMS Online\" on my CV actually help me move from a back-end Ops role to a front-end/Client Growth role in Mumbai, or will they just see it as a \"bought\" degree?\n2. **The \"Ops\" Specialization:** Since I’m already at Amazon, does doing an MBA in Operations even add value? Or should I go for something like Business Analytics to look \"more technical\"?\n3. **The Filter:** Does this degree actually clear the \"Master's Required\" HR filter at big firms, or do they only count full-time MBAs?\n4. **Alternatives:** Is there a better way to spend that 1.5 - 2 lakhs to pivot my career?\n\nI’m not expecting to become a CEO overnight, I just don’t want to be stuck processing tickets forever. If you’ve done the program or hire people who have, please let me know if it's worth the time and money.",
+      "url": "https://reddit.com/r/india/comments/1rnaslr/is_an_online_mba_from_nmims_ngasce_worth_it_need/",
+      "created_utc": 1772892284.0,
+      "timestamp": "2026-03-07T19:34:44",
+      "engagement": {
+        "upvotes": 1,
+        "downvotes": 0,
+        "comments": 4,
+        "score": 1
+      },
+      "subreddit": "india",
+      "flair": "Careers",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Is an Online MBA from NMIMS (NGASCE) worth it? Need honest advice."
+    },
+    {
+      "id": "1rn530l",
+      "source": "reddit_r/india",
+      "author": "ExtensionForce4354",
+      "title": "As modern life gets busier, are more people in India turning toward spirituality again?",
+      "content": "Hello everyone,\n\nI was born and brought up in Mumbai, a city that has always been fast, intense and constantly moving. Over the years I’ve watched how the pace of life across many parts of India has steadily picked up, long commutes in big cities, financial responsibilities, and the general rush of modern life and over all development \n\nAt the same time, I’ve been noticing another interesting shift around the country. Crystals, meditation circles, spiritual workshops, energy practices and discussions around esoteric traditions or even para - normal experiences seem far more common now than they used to be, in person or social media boom\n\nHaving spent many years working with crystals and studying different spiritual and esoteric traditions, and being involved in paranormal investigations and mediumship work, it’s been quite interesting for me to watch this curiosity slowly becoming more visible in everyday conversations.\n\nIt also feels like more and more people are naturally inclining/ returning toward these kinds of practices or traditions at certain points in their lives, sometimes searching for balance, meaning, or simply a different way of understanding their experiences.\n\nIt makes me wonder about something though.\n\nIs the rising stress of modern life pushing more people toward spirituality and these practices in search of balance?\nOr is the growing awareness of these traditions simply making us notice them more around us?\n\nJust something I’ve been observing over time, and I’m curious how others across India see this shift.",
+      "url": "https://reddit.com/r/india/comments/1rn530l/as_modern_life_gets_busier_are_more_people_in/",
+      "created_utc": 1772873325.0,
+      "timestamp": "2026-03-07T14:18:45",
+      "engagement": {
+        "upvotes": 0,
+        "downvotes": 0,
+        "comments": 3,
+        "score": 0
+      },
+      "subreddit": "india",
+      "flair": "Culture &amp; Heritage ",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "As modern life gets busier, are more people in India turning toward spirituality again?"
+    },
+    {
+      "id": "1rmn6qw",
+      "source": "reddit_r/india",
+      "author": "Curiousafari",
+      "title": "26M Left a 23k BPO job for engineering career, now getting 12–18k offers. Did i make a mistake?",
+      "content": "Hi everyone,\nI’m 26 and completed my BTech in Electrical Engineering in 2023 from a tier 3 college\nAfter graduating, I worked in a BPO/operations role earning around ₹23k/month. But the work felt repetitive and didn’t seem to have much long-term growth, so I left it to try building a career in engineering.\nAfter about 3–4 months of unemployment, I finally got two offers in the Electrical MEP field:\nMumbai – Electrical MEP role (design calculations + AutoCAD), ₹18k/month. However, the company has some reviews online saying salaries are sometimes delayed.\nSurat – Electrical MEP role (drafting + calculations), ₹12k for 3 months → ₹15k after. Small company (~30 employees).\nAt the same time, I also recently received another BPO offer of around ₹28k/month, which is much higher than these engineering salaries.\nNow I’m confused. If I go back to BPO, the pay is better immediately. But if I stay in electrical engineering, it might have a better future in the next few years since it’s a skill-based field.\nDid I make the wrong decision leaving the BPO job, and should I go back to it or continue in engineering for the long term?",
+      "url": "https://reddit.com/r/india/comments/1rmn6qw/26m_left_a_23k_bpo_job_for_engineering_career_now/",
+      "created_utc": 1772824390.0,
+      "timestamp": "2026-03-07T00:43:10",
+      "engagement": {
+        "upvotes": 10,
+        "downvotes": 0,
+        "comments": 17,
+        "score": 10
+      },
+      "subreddit": "india",
+      "flair": "Careers",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "26M Left a 23k BPO job for engineering career, now getting 12–18k offers. Did i make a mistake?"
+    },
+    {
+      "id": "1rla9eu",
+      "source": "reddit_r/india",
+      "author": "Cybertronian1512",
+      "title": "Filmmaker Anand Patwardhan denied entry at Mumbai University",
+      "content": "",
+      "url": "https://reddit.com/r/india/comments/1rla9eu/filmmaker_anand_patwardhan_denied_entry_at_mumbai/",
+      "created_utc": 1772692190.0,
+      "timestamp": "2026-03-05T11:59:50",
+      "engagement": {
+        "upvotes": 217,
+        "downvotes": 0,
+        "comments": 4,
+        "score": 217
+      },
+      "subreddit": "india",
+      "flair": "Politics",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Filmmaker Anand Patwardhan denied entry at Mumbai University"
+    },
+    {
+      "id": "1rjknjs",
+      "source": "reddit_r/india",
+      "author": "ConfusionWorth5459",
+      "title": "Colour of happiness",
+      "content": "If happiness had a colour\n\nmost would pick saffron or bright pink\n\nlike gulal thrown on Holi morning\n\nor the gold of a Diwali lamp.\n\nMine is a tired yellow\n\nthe colour of an old Mumbai local train light\n\nat 9:30 p.m. after a long day\n\nwhen the crowd thins just enough\n\nand you finally get a window seat\n\nand the fan above is actually spinning.\n\nThat yellow takes me back to 2006\n\na rented 1RK in Mira Road\n\nrent paid, gas cylinder full.\n\nA woman who still laughed at my jokes\n\nleft half a plate of poha on the table\n\nbefore she took the night shift and never came back the same.\n\nIt wasn’t a holiday postcard\n\nnot even close to perfect.\n\nBut the tube-light hummed soft\n\nthe revellers’ noise seeped through the window\n\nand for maybe half an hour\n\nthe city didn’t feel like it was trying to kill me.\n\nSome dream of happiness ahead\n\nneon green like app notifications\n\nelectric blue like future vacations.\n\nThey call it hope\n\nmaybe they’re right\n\nmaybe tomorrow the bonus hits\n\nor the loan gets approved\n\nor someone smiles without wanting anything.\n\nBut right now\n\nmy happiness is that dull local-train yellow\n\nand old tube-lights, damp walls, evenings you don’t quite hate.\n\nThis Holi\n\nthrow your colours\n\nsaffron, pink, green, whatever you’ve got\n\nlet them stain your kurta, your skin, your hair.\n\nMaybe a little will stick\n\nmaybe later you will look in the mirror\n\nand see something almost breathing.\n\nI’ll be here\n\nwith my quiet yellow\n\nsipping from my quarter\n\nwatching the fan blades blur\n\nand calling it my happy colour.\n\nHappy Holi, my friend.",
+      "url": "https://reddit.com/r/india/comments/1rjknjs/colour_of_happiness/",
+      "created_utc": 1772529084.0,
+      "timestamp": "2026-03-03T14:41:24",
+      "engagement": {
+        "upvotes": 2,
+        "downvotes": 0,
+        "comments": 2,
+        "score": 2
+      },
+      "subreddit": "india",
+      "flair": "Books &amp; Literature",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Colour of happiness"
+    },
+    {
+      "id": "1rik319",
+      "source": "reddit_r/india",
+      "author": "mumbaiblues",
+      "title": "Pune-Mumbai travel time to reduce to 48 minutes: Railway minister",
+      "content": "",
+      "url": "https://reddit.com/r/india/comments/1rik319/punemumbai_travel_time_to_reduce_to_48_minutes/",
+      "created_utc": 1772428506.0,
+      "timestamp": "2026-03-02T10:45:06",
+      "engagement": {
+        "upvotes": 57,
+        "downvotes": 0,
+        "comments": 11,
+        "score": 57
+      },
+      "subreddit": "india",
+      "flair": "Politics",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Pune-Mumbai travel time to reduce to 48 minutes: Railway minister"
+    },
+    {
+      "id": "1ri2vuw",
+      "source": "reddit_r/india",
+      "author": "NovelSpecialist1469",
+      "title": "Airtel showing “Out of Network Area” with full signal bars — calls vanishing with zero call records. Is anyone else facing this?",
+      "content": "I’ve been experiencing a seriously frustrating issue with Indian telecom networks and I want to know if others are facing the same.\n\nMy setup:\n\nI live on the top floor of a building in CSN (Chhatrapati Sambhajinagar) — right in the heart of the city. No basement, no weak signal, no remote area. I have an Airtel SIM in my iPhone 17 and a separate Vodafone phone as my second device. All bars are fully lit on both phones.\n\nIt started with my wife:\n\nThis morning I called my wife from my Airtel number. Her phone showed she was on a call with someone else. I assumed she’d call me back once done. But she never did. Later when I asked her, she said she never received my call at all. I physically checked her phone — there was absolutely no record of my call. Not even a missed call. The call just vanished into thin air.\n\nThen I tested it myself:\n\nI called my own Vodafone phone from my Airtel number — both phones sitting right next to each other, both with full signal bars. Airtel told me the Vodafone phone was “out of network area.” I called again — same message. Only on the third attempt did it finally ring. The first two failed attempts showed no record on the Vodafone phone either.\n\nThis is NOT a peak hour or congestion issue:\n\nI tested this during the daytime — okay, you could blame traffic. But I also tested this at 1 AM in the middle of the night when there is virtually zero network traffic. Same result. So congestion is clearly not the cause.\n\nThis happens across all major cities:\n\nMy HR regularly calls my Airtel number and gets “not reachable” — even when my phone has full signal. This has happened to me not just in CSN but also in Mumbai, Bangalore, and Kerala. All major cities. All heart of the city locations. Not villages, not remote areas.\n\nThe bigger problem nobody talks about:\n\nThis is not just a technical inconvenience. This is a psychological and relationship issue. This morning I actually thought my wife saw my call and intentionally ignored it. We had an argument tb about it. Only when I physically checked her phone did I realise the call never even reached her. Imagine couples, friends, colleagues — how many misunderstandings must be happening daily because of this silent network failure?\n\nA boyfriend calls partner. She never gets the call. He thinks she’s ignoring him. Arguments happen. Relationships are affected. And nobody even realises the real cause is the network.\n\nMy take:\n\nIt seems like Airtel’s towers are taking way too long to locate and register the device on the network. The tower searches for the phone, fails, and just drops the call silently — with no record on either end. This feels like seriously outdated backend technology. For a premium telecom operator in 2025, this is simply not acceptable.\n\nHas anyone else experienced this? Any fixes or is it time to switch operators entirely?",
+      "url": "https://reddit.com/r/india/comments/1ri2vuw/airtel_showing_out_of_network_area_with_full/",
+      "created_utc": 1772385367.0,
+      "timestamp": "2026-03-01T22:46:07",
+      "engagement": {
+        "upvotes": 9,
+        "downvotes": 0,
+        "comments": 9,
+        "score": 9
+      },
+      "subreddit": "india",
+      "flair": "Business/Finance",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Airtel showing “Out of Network Area” with full signal bars — calls vanishing with zero call records. Is anyone else facing this?"
+    }
+  ],
+  "cost_tracking": {
+    "tokens_used": 2500,
+    "estimated_cost": 0.0020000000000000005
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "collected_at": "2026-03-14T00:06:43.773705",
+  "wards_monitored": [
+    "K-West",
+    "H-West"
+  ],
+  "permit_count": 6,
+  "statistics": {
+    "total_permits": 6,
+    "by_ward": {
+      "K-West": 3,
+      "H-West": 3
+    },
+    "by_stage": {
+      "CC": 2,
+      "IOD": 2,
+      "BCC": 2
+    },
+    "by_type": {
+      "Residential": 2,
+      "Commercial": 2,
+      "Mixed Use": 2
+    },
+    "by_status": {
+      "Approved": 2,
+      "Filed": 2,
+      "Completed": 2
+    }
+  },
+  "development_summary": [
+    {
+      "ward": "K-West",
+      "ward_name": "Andheri West",
+      "permit_count": 3,
+      "top_project_type": "Residential",
+      "top_project_type_count": 1,
+      "top_permit_stage": "CC",
+      "top_permit_stage_count": 1,
+      "residential_ratio": 0.33,
+      "commercial_ratio": 0.33,
+      "construction_activity_score": 6,
+      "project_type_breakdown": {
+        "Residential": 1,
+        "Commercial": 1,
+        "Mixed Use": 1
+      },
+      "permit_stage_breakdown": {
+        "CC": 1,
+        "IOD": 1,
+        "BCC": 1
+      },
+      "trend": "Residential development increasing in Andheri West. diverse project portfolio."
+    },
+    {
+      "ward": "H-West",
+      "ward_name": "Bandra West",
+      "permit_count": 3,
+      "top_project_type": "Residential",
+      "top_project_type_count": 1,
+      "top_permit_stage": "CC",
+      "top_permit_stage_count": 1,
+      "residential_ratio": 0.33,
+      "commercial_ratio": 0.33,
+      "construction_activity_score": 6,
+      "project_type_breakdown": {
+        "Residential": 1,
+        "Commercial": 1,
+        "Mixed Use": 1
+      },
+      "permit_stage_breakdown": {
+        "CC": 1,
+        "IOD": 1,
+        "BCC": 1
+      },
+      "trend": "Residential development increasing in Bandra West. diverse project portfolio."
+    }
+  ],
+  "permits": [
+    {
+      "ward": "K-West",
+      "ward_name": "Andheri West",
+      "location": "Andheri West",
+      "permit_stage": "CC",
+      "permit_stage_full": "Commencement Certificate",
+      "project_type": "Residential",
+      "project_name": "Residential Tower - Andheri West",
+      "status": "Approved",
+      "date_detected": "2026-03-14",
+      "metadata": {
+        "floors": 15,
+        "units": 45,
+        "estimated_completion": "2027-03-14"
+      },
+      "impact_summary": "New residential tower construction expected in the area",
+      "neighborhood_impact": [
+        "construction",
+        "new_housing",
+        "high_rise"
+      ],
+      "geo": {
+        "lat": 19.135,
+        "lon": 72.825
+      },
+      "timeline_stage": "Construction Starting",
+      "agent_metadata": {
+        "agent": "permit_monitor",
+        "source": "BMC Ward Monitor",
+        "confidence": 0.85,
+        "version": "2.0"
+      },
+      "impact_score": 6,
+      "permit_id": "b9356f07f19fa59b"
+    },
+    {
+      "ward": "K-West",
+      "ward_name": "Andheri West",
+      "location": "Versova",
+      "permit_stage": "IOD",
+      "permit_stage_full": "Intimation of Disapproval",
+      "project_type": "Commercial",
+      "project_name": "Commercial Complex - Andheri West",
+      "status": "Filed",
+      "date_detected": "2026-03-14",
+      "metadata": {
+        "floors": 8,
+        "units": 20,
+        "estimated_completion": "2027-03-14"
+      },
+      "impact_summary": "New commercial development planned",
+      "neighborhood_impact": [
+        "construction",
+        "commercial_development"
+      ],
+      "geo": {
+        "lat": 19.135,
+        "lon": 72.825
+      },
+      "timeline_stage": "Planning",
+      "agent_metadata": {
+        "agent": "permit_monitor",
+        "source": "BMC Ward Monitor",
+        "confidence": 0.85,
+        "version": "2.0"
+      },
+      "impact_score": 2,
+      "permit_id": "2ff79cb95c93bdcf"
+    },
+    {
+      "ward": "K-West",
+      "ward_name": "Andheri West",
+      "location": "Lokhandwala",
+      "permit_stage": "BCC",
+      "permit_stage_full": "Building Completion Certificate",
+      "project_type": "Mixed Use",
+      "project_name": "Mixed Use Development - Andheri West",
+      "status": "Completed",
+      "date_detected": "2026-03-14",
+      "metadata": {
+        "floors": 20,
+        "units": 60,
+        "estimated_completion": "2027-03-14"
+      },
+      "impact_summary": "Mixed-use building nearing completion",
+      "neighborhood_impact": [
+        "new_housing",
+        "commercial_development",
+        "high_rise"
+      ],
+      "geo": {
+        "lat": 19.135,
+        "lon": 72.825
+      },
+      "timeline_stage": "Near Completion",
+      "agent_metadata": {
+        "agent": "permit_monitor",
+        "source": "BMC Ward Monitor",
+        "confidence": 0.85,
+        "version": "2.0"
+      },
+      "impact_score": 4,
+      "permit_id": "90fdea2ecb5bbc84"
+    },
+    {
+      "ward": "H-West",
+      "ward_name": "Bandra West",
+      "location": "Bandra West",
+      "permit_stage": "CC",
+      "permit_stage_full": "Commencement Certificate",
+      "project_type": "Residential",
+      "project_name": "Residential Tower - Bandra West",
+      "status": "Approved",
+      "date_detected": "2026-03-14",
+      "metadata": {
+        "floors": 15,
+        "units": 45,
+        "estimated_completion": "2027-03-14"
+      },
+      "impact_summary": "New residential tower construction expected in the area",
+      "neighborhood_impact": [
+        "construction",
+        "new_housing",
+        "high_rise"
+      ],
+      "geo": {
+        "lat": 19.0596,
+        "lon": 72.8295
+      },
+      "timeline_stage": "Construction Starting",
+      "agent_metadata": {
+        "agent": "permit_monitor",
+        "source": "BMC Ward Monitor",
+        "confidence": 0.85,
+        "version": "2.0"
+      },
+      "impact_score": 6,
+      "permit_id": "fc4bb55e76a312f2"
+    },
+    {
+      "ward": "H-West",
+      "ward_name": "Bandra West",
+      "location": "Khar West",
+      "permit_stage": "IOD",
+      "permit_stage_full": "Intimation of Disapproval",
+      "project_type": "Commercial",
+      "project_name": "Commercial Complex - Bandra West",
+      "status": "Filed",
+      "date_detected": "2026-03-14",
+      "metadata": {
+        "floors": 8,
+        "units": 20,
+        "estimated_completion": "2027-03-14"
+      },
+      "impact_summary": "New commercial development planned",
+      "neighborhood_impact": [
+        "construction",
+        "commercial_development"
+      ],
+      "geo": {
+        "lat": 19.0596,
+        "lon": 72.8295
+      },
+      "timeline_stage": "Planning",
+      "agent_metadata": {
+        "agent": "permit_monitor",
+        "source": "BMC Ward Monitor",
+        "confidence": 0.85,
+        "version": "2.0"
+      },
+      "impact_score": 2,
+      "permit_id": "c972b50d9a718dd7"
+    },
+    {
+      "ward": "H-West",
+      "ward_name": "Bandra West",
+      "location": "Bandra West",
+      "permit_stage": "BCC",
+      "permit_stage_full": "Building Completion Certificate",
+      "project_type": "Mixed Use",
+      "project_name": "Mixed Use Development - Bandra West",
+      "status": "Completed",
+      "date_detected": "2026-03-14",
+      "metadata": {
+        "floors": 20,
+        "units": 60,
+        "estimated_completion": "2027-03-14"
+      },
+      "impact_summary": "Mixed-use building nearing completion",
+      "neighborhood_impact": [
+        "new_housing",
+        "commercial_development",
+        "high_rise"
+      ],
+      "geo": {
+        "lat": 19.0596,
+        "lon": 72.8295
+      },
+      "timeline_stage": "Near Completion",
+      "agent_metadata": {
+        "agent": "permit_monitor",
+        "source": "BMC Ward Monitor",
+        "confidence": 0.85,
+        "version": "2.0"
+      },
+      "impact_score": 4,
+      "permit_id": "346891d71f2d5196"
+    }
+  ],
+  "cost_tracking": {
+    "tokens_used": 0,
+    "estimated_cost": 0.0
+  }
+}

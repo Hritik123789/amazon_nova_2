@@ -1,0 +1,23 @@
+{
+  "briefing_id": "morning-20260311-000821",
+  "user_location": {
+    "latitude": 19.076,
+    "longitude": 72.8777,
+    "name": "Mumbai"
+  },
+  "generated_at": "2026-03-11T00:08:21.871732",
+  "text_content": "**Good morning, Mumbai!**\n\nI hope you’re having a great start to your day. Here’s a quick rundown of what’s happening in our vibrant city today.\n\nFirst up, the Mumbai civic chief is taking a firm stand against unauthorized hawkers. Strict actions will be taken to ensure the city stays clean and safe.\n\nNext, let’s talk security. A significant case where an engineer was caught sharing sensitive information about our warships and submarines with Pakistani nationals has been making headlines. The court has denied bail, highlighting the seriousness of the charges.\n\nIn civic news, the BMC is on a mission to recover pending taxes. E-auction notices have been issued to 34 defaulters, with some properties already listed for auction. If you’re one of the defaulters, it’s a good idea to clear your dues to avoid any legal action.\n\nRegarding permits, there are no high-priority activities in your area today, so you can expect smooth sailing on that front.\n\nThat’s all for now. Have a fantastic day, and remember, Mumbai is always buzzing with new opportunities and stories!",
+  "sections": [
+    {
+      "type": "news",
+      "items_count": 5,
+      "priority": "high"
+    },
+    {
+      "type": "permits",
+      "items_count": 1,
+      "priority": "high"
+    }
+  ],
+  "duration_estimate_seconds": 70.4
+}

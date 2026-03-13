@@ -1,0 +1,294 @@
+[
+  {
+    "article_number": 1,
+    "title": "Mumbai civic chief directs strict action against unauthorised hawkers",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/mumbai-civic-chief-directs-strict-action-against-unauthorised-hawkers-101772990340031.html",
+    "summary": "Mumbai civic chief directs strict action against unauthorised hawkers"
+  },
+  {
+    "article_number": 3,
+    "title": "No bail for engineer held for giving info on warships, submarines to Pak nationals",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 5,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/no-bail-for-engineer-held-for-giving-info-on-warships-submarines-to-pak-nationals-101772969273072.html",
+    "summary": "No bail for engineer held for giving info on warships, submarines to Pak nationals"
+  },
+  {
+    "article_number": 7,
+    "title": "BMC issues e-auction notices to 34 defaulters to recover  ₹548.69 pending taxes",
+    "category": "Civic",
+    "mentions": [
+      "BMC"
+    ],
+    "permit_check_required": false,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/bmc-issues-e-auction-notices-to-34-defaulters-to-recover-548-69-pending-taxes-101772911860492.html",
+    "summary": "BMC issues e-auction notices for 34 properties owing  ₹548.69 crore in taxes, with 6 currently listed. Some defaulters cleared dues to halt actions."
+  },
+  {
+    "article_number": 8,
+    "title": "HC upholds eviction of son who took over his mother’s redeveloped flat",
+    "category": "Real Estate",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/hc-upholds-eviction-of-son-who-took-over-his-mother-s-redeveloped-flat-101772911740610.html",
+    "summary": "A single judge bench of Justice N J Jamadar held that barging into his mother’s flat and forcibly removing her from her property was in breach of the Maintenance and Welfare of Parents and Senior Citizens Act"
+  },
+  {
+    "article_number": 9,
+    "title": "MCOCA court refuses discharge to accused in 2020 Juhu builder murder case",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 7,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/mcoca-court-refuses-discharge-to-accused-in-2020-juhu-builder-murder-case-101772911680999.html",
+    "summary": "The court held that the material collected by investigators, including witness statements linking him to the alleged conspiracy, was sufficient to proceed with the trial"
+  },
+  {
+    "article_number": 13,
+    "title": "Five arrested for attacking BMC officers at anti-encroachment drive",
+    "category": "Civic",
+    "mentions": [
+      "BMC"
+    ],
+    "permit_check_required": false,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/five-arrested-for-attacking-bmc-officers-at-anti-encroachment-drive-101772911203487.html",
+    "summary": "When BMC began demolishing the illegal shop extensions, a few persons began hurling abuses at them. According to the FIR, a mob chased them, particularly junior engineer Akshay Joshi, forcing him to flee and take refuge inside Brahmand Supermarket"
+  },
+  {
+    "article_number": 14,
+    "title": "MPID court rejects to discharge accused who duped 3,000 investors of  ₹100 cr",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 6,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/mpid-court-rejects-to-discharge-accused-who-duped-3-000-investors-of-100-cr-101772911200213.html",
+    "summary": "Judge Vikram R Jagdale said there was sufficient prima facie material in the chargesheet to proceed against Prabhu on charges of cheating, criminal breach of trust and violations of the MPID Act"
+  },
+  {
+    "article_number": 15,
+    "title": "Man held for posing as MHA minister’s aide",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": true,
+    "relevance_score": 5,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/man-held-for-posing-as-mha-minister-s-aide-101772909341727.html",
+    "summary": "Police said Pathan allegedly posed as Pawankumar Yadav, private secretary to Union home minister Amit Shah, and contacted senior police officers seeking favours in criminal cases"
+  },
+  {
+    "article_number": 16,
+    "title": "Metro 3 last-mile bus plan hits a speed bump as services halved after failing to attract enough riders",
+    "category": "Traffic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/metro-3-last-mile-bus-plan-hits-a-speed-bump-as-services-halved-after-failing-to-attract-enough-riders-101772909399795.html",
+    "summary": "Mumbai's Aqua Line feeder bus services have been reduced from seven to three stations due to low ridership and operational challenges."
+  },
+  {
+    "article_number": 20,
+    "title": "Traffic-choked Ghodbunder Road stretch handed over to Thane civic body for maintenance",
+    "category": "Traffic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/trafficchoked-ghodbunder-road-stretch-handed-over-to-thane-civic-body-for-maintenance-101772909039714.html",
+    "summary": "The poor condition of this road had made deputy CM Eknath Shinde, who hails from Thane and is also its guardian minister, the target of much criticism. Vehicles would often take three to four hours to clear the stretch"
+  },
+  {
+    "article_number": 21,
+    "title": "Row over notices to MHADA colonies for  ₹400-crore service charges",
+    "category": "Real Estate",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 9,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/row-over-notices-to-mhada-colonies-for-400-crore-service-charges-101772908920034.html",
+    "summary": "Shiv Sena (UBT) legislators pointed out that MHADA had demanded that the arrears be paid with interest. According to them, some housing societies had received bills for amounts as high as  ₹40 lakh to  ₹60 lakh, which was impossible for middle-class residents to pay"
+  },
+  {
+    "article_number": 22,
+    "title": "Thane sub-registrar, agent booked for  ₹14 crore stamp-duty fraud in 941 CIDCO-linked property registrations",
+    "category": "Real Estate",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/thane-sub-registrar-agent-booked-for-14-crore-stamp-duty-fraud-in-941-cidco-linked-property-registrations-101772908742113.html",
+    "summary": "The accused have been identified as Rajkumar Dahiphale, the then in-charge joint sub-registrar of the Thane No. 8 office, and Yogesh Chavan, a document registration agent. Police said investigations are also underway to identify other associates allegedly involved in the fraud"
+  },
+  {
+    "article_number": 23,
+    "title": "BMC pre-primary teachers await salary hike for two decades",
+    "category": "Civic",
+    "mentions": [
+      "BMC"
+    ],
+    "permit_check_required": false,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/bmc-pre-primary-teachers-await-salary-hike-for-two-decades-101772908679574.html",
+    "summary": "The teachers were directly appointed by the BMC education department. However, the policy was later changed and teachers began to be appointed through NGOs. While the system changed, the 18 teachers continued working in BMC schools on the same fixed remuneration"
+  },
+  {
+    "article_number": 28,
+    "title": "Residents, activists march in Kandivali to oppose mangrove cutting for Versova–Dahisar coastal road",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/residents-activists-march-in-kandivali-to-oppose-mangrove-cutting-for-versova-dahisar-coastal-road-101772826932856.html",
+    "summary": "Carrying placards and artwork and raising slogans of “Save Mumbai, Save Mangroves”, participants staged street plays and interacted with passers-by to highlight what they described as the environmental risks posed by the northern arm of Mumbai’s coastal road network"
+  },
+  {
+    "article_number": 29,
+    "title": "GMLR Phase IV approved with  ₹800-cr cost escalation",
+    "category": "Civic",
+    "mentions": [
+      "BMC"
+    ],
+    "permit_check_required": true,
+    "relevance_score": 5,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/gmlr-phase-iv-approved-with-800-cr-cost-escalation-101772826874337.html",
+    "summary": "BMC approved the GMLR's fourth phase with costs rising from  ₹1,293 to  ₹2,113 crores, aiming to cut travel time from Goregaon to Mulund to 20 minutes."
+  },
+  {
+    "article_number": 32,
+    "title": "MU bars BEST bus from Kalina campus citing security concerns; students face longer commute",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": true,
+    "relevance_score": 7,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/mu-bars-best-bus-from-kalina-campus-citing-security-concerns-students-face-longer-commute-101772826635645.html",
+    "summary": "The University of Mumbai has halted BEST bus 318 access to its Kalina campus due to security concerns over a protest, disrupting student commutes."
+  },
+  {
+    "article_number": 34,
+    "title": "Underground road network to expand; Fourth Mumbai in the works",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": true,
+    "relevance_score": 6,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/underground-road-network-to-expand-fourth-mumbai-in-the-works-101772826576245.html",
+    "summary": "Presenting the budget in the legislative assembly, Fadnavis said 70% of the state’s population is expected to be living in cities in the next two decades, prompting the government to develop new urban areas and growth centres while also rebuilding the infrastructure in existing cities"
+  },
+  {
+    "article_number": 35,
+    "title": "Mathadi workers’ 50-kg cap disrupts onion-potato trade at Vashi APMC, arrivals drop and prices rise",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 7,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/mathadi-workers-50-kg-cap-disrupts-onion-potato-trade-at-vashi-apmc-arrivals-drop-and-prices-rise-101772826516089.html",
+    "summary": "Navi Mumbai's onion-potato market faces disruption as Mathadi workers enforce a 50-kg limit on sacks, causing price hikes and delayed truck unloading."
+  },
+  {
+    "article_number": 36,
+    "title": "MTNL fares worst in TRAI’s network test in Mumbai",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 6,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/mtnl-fares-worst-in-trai-s-network-test-in-mumbai-101772826395757.html",
+    "summary": "The independent drive test assessed the real-world performance of mobile networks across different environments, including urban areas, crowded public places, transport hubs and high-speed corridors"
+  },
+  {
+    "article_number": 37,
+    "title": "HC to cops, BMC: Act against Bandra restaurant Coconut Boy over loud music",
+    "category": "Civic",
+    "mentions": [
+      "BMC"
+    ],
+    "permit_check_required": false,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/hc-to-cops-bmc-act-against-bandra-restaurant-coconut-boy-over-loud-music-101772826215000.html",
+    "summary": "During the hearing on March 4, a bench of justices MS Karnik and SM Modak on March 4 directed the police commissioner to look into the representations made by the petitioner and initiate appropriate action against the restaurant"
+  },
+  {
+    "article_number": 38,
+    "title": "Maharashtra top cop's name, fake link to Pahalgam attack: How Mumbai man was duped of  ₹2 cr",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": true,
+    "relevance_score": 2,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/fraudsters-use-maha-police-chief-s-name-to-dupe-senior-of-2-25-cr-101772825912274.html",
+    "summary": "To threaten the victim, the fraudsters used the name of the anti-terror NIA’s former chief Sadanand Date and forged a signature they claimed was his."
+  },
+  {
+    "article_number": 39,
+    "title": "Cyber frauds con Bombay High Court justice of  ₹6.02 lakh",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/cyber-frauds-con-bombay-high-court-justice-of-6-02-lakh-101772825672517.html",
+    "summary": "The police said they have traced the numbers and the bank accounts of the accused and teams are searching for them"
+  },
+  {
+    "article_number": 40,
+    "title": "Metro 11 extended by 6.9km, to go from Wadala to Bandra Terminus",
+    "category": "Traffic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 9,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/metro-11-extended-by-6-9km-to-go-from-wadala-to-bandra-terminus-101772825192848.html",
+    "summary": "The extension will add 6.9 km to the planned 16.5 km corridor, making it a 23.4 km long metro line for the Mumbai Metro Rail Corporation Limited (MMRCL) to construct and operate"
+  },
+  {
+    "article_number": 41,
+    "title": "Sion ROB may be thrown open by August",
+    "category": "Civic",
+    "mentions": [
+      "BMC"
+    ],
+    "permit_check_required": true,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/sion-rob-may-be-thrown-open-by-august-101772824894079.html",
+    "summary": "The BMC standing committee on Friday approved a modification in the design of the approach road to the ROB, which will push up the total project cost by 16.65%"
+  },
+  {
+    "article_number": 46,
+    "title": "Minor accused in fatal Ghatkopar SUV crash granted bail",
+    "category": "Traffic",
+    "mentions": [],
+    "permit_check_required": true,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/minor-accused-in-fatal-ghatkopar-suv-crash-granted-bail-101772823575338.html",
+    "summary": "The family had opposed the bail before the board through an intervention application filed by the complainant Mahesh Karamsi Patel, the deceased’s uncle, through advocate Ruben Mascarenhas. The application urged the board to consider the gravity of the offence and circumstances of the crash before granting relief"
+  },
+  {
+    "article_number": 47,
+    "title": "API, 3 constables suspended in extortion-theft case",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/api-3-constables-suspended-in-extortion-theft-case-101772823632198.html",
+    "summary": "The accused have been identified as assistant police inspector Vijay Sutar and constables Yogesh Khandake, Ravindra Nemane and Dhanashree More, all members of RCF police station’s Anti-Terrorism Cell"
+  },
+  {
+    "article_number": 49,
+    "title": "Three held for killing 32-year-old man in Cuffe Parade",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 6,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/three-held-for-killing-32-year-old-man-in-cuffe-parade-101772823514211.html",
+    "summary": "The deceased, identified as Mukul Tayaz Shaikh, was a resident of Murshidabad district in West Bengal. The arrested accused have been identified as Innamul Hayat Haq, Hassibur Rehman Abdul Rauf Shaikh and Abdul Rauf Shaikh, all labourers living in Dr Babasaheb Ambedkar Nagar in Cuffe Parade"
+  },
+  {
+    "article_number": 50,
+    "title": "HC upholds senior citizen’s right to evict son and daughter-in-law",
+    "category": "Civic",
+    "mentions": [],
+    "permit_check_required": false,
+    "relevance_score": 8,
+    "url": "https://www.hindustantimes.com/cities/mumbai-news/hc-upholds-senior-citizen-s-right-to-evict-son-and-daughterinlaw-101772823451386.html",
+    "summary": "The senior citizen claimed that the couple physically assaulted her and pressured her to execute documents transferring ownership of the flat to the son"
+  }
+]

@@ -16,8 +16,10 @@ class NewsCollector:
     def __init__(self):
         # Sample local news RSS feeds (you can add more)
         self.feeds = [
-            "http://rss.cnn.com/rss/cnn_topstories.rss",
-            "https://feeds.bbci.co.uk/news/rss.xml",
+            "https://www.mid-day.com/rss-feed/mumbai-xml-submit.php",  # Mid-Day Mumbai
+            "https://www.hindustantimes.com/feeds/rss/cities/mumbai-news/rssfeed.xml", # HT Mumbai
+            "https://timesofindia.indiatimes.com/rssfeeds/-2128838597.cms", # TOI Mumbai
+            "https://www.thehindu.com/news/cities/mumbai/feeder/default.rss"
             # Add your local news sources here
         ]
     

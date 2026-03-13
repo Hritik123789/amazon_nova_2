@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-03-13T23:22:14.158541",
+  "target_area": "Mumbai",
+  "trends": {
+    "hotspots": [
+      {
+        "location": "Mumbai",
+        "activity_count": 4,
+        "growth_score": 0.571
+      },
+      {
+        "location": "Thane",
+        "activity_count": 2,
+        "growth_score": 0.286
+      },
+      {
+        "location": "Nagpur",
+        "activity_count": 1,
+        "growth_score": 0.143
+      }
+    ],
+    "project_distribution": [
+      {
+        "type": "other",
+        "count": 4
+      },
+      {
+        "type": "real_estate",
+        "count": 3
+      }
+    ],
+    "total_permits": 7,
+    "total_locations": 3,
+    "development_news_count": 6
+  },
+  "insights": {
+    "hotspot_analysis": [
+      {
+        "location": "Mumbai",
+        "investment_potential": "high",
+        "reasoning": "Mumbai has the highest growth score (0.571) and the most development activity (4 out of 7 total permits). This indicates a high concentration of development activity and potential for significant growth.",
+        "recommendation": "Invest in residential and commercial real estate projects in Mumbai due to the high concentration of development activity.",
+        "suggested_neighborhoods": [
+          "Bandra West",
+          "Andheri East",
+          "Powai",
+          "Lower Parel",
+          "Worli"
+        ]
+      },
+      {
+        "location": "Thane",
+        "investment_potential": "medium",
+        "reasoning": "Thane has a moderate growth score (0.286) and fewer development activities (2 out of 7 total permits). This indicates a moderate level of development activity and potential for growth.",
+        "recommendation": "Consider investing in commercial or mixed-use real estate projects in Thane.",
+        "suggested_neighborhoods": [
+          "Thane West",
+          "Ghodbunder Road",
+          "Majiwada"
+        ]
+      },
+      {
+        "location": "Nagpur",
+        "investment_potential": "low",
+        "reasoning": "Nagpur has the lowest growth score (0.143) and the least development activity (1 out of 7 total permits). This indicates a low concentration of development activity and potential for limited growth.",
+        "recommendation": "Avoid investing in Nagpur as it has the least development activity and potential for growth.",
+        "suggested_neighborhoods": []
+      }
+    ],
+    "market_trends": {
+      "dominant_sector": "real_estate",
+      "growth_indicators": [
+        "High concentration of development activity in Mumbai",
+        "Moderate concentration in Thane",
+        "Low concentration in Nagpur"
+      ],
+      "risk_factors": [
+        "High competition in Mumbai",
+        "Potential regulatory changes"
+      ]
+    },
+    "investment_recommendations": [
+      {
+        "strategy": "Focus on high-growth neighborhoods in Mumbai",
+        "target_areas": [
+          "Bandra West",
+          "Andheri East",
+          "Powai",
+          "Lower Parel",
+          "Worli"
+        ],
+        "timeframe": "medium-term",
+        "confidence": "high"
+      },
+      {
+        "strategy": "Explore opportunities in Thane",
+        "target_areas": [
+          "Thane West",
+          "Ghodbunder Road",
+          "Majiwada"
+        ],
+        "timeframe": "medium-term",
+        "confidence": "medium"
+      },
+      {
+        "strategy": "Avoid investing in Nagpur",
+        "target_areas": [],
+        "timeframe": "long-term",
+        "confidence": "low"
+      }
+    ]
+  },
+  "metadata": {
+    "tokens_used": 1108,
+    "estimated_cost": 0.00017304
+  }
+}

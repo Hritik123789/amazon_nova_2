@@ -1,0 +1,523 @@
+{
+  "collected_at": "2026-03-13T23:22:08.996498",
+  "source_count": 2,
+  "post_count": 20,
+  "sources": [
+    "reddit_r/mumbai",
+    "reddit_r/india"
+  ],
+  "sentiment_summary": {
+    "positive": 5.0,
+    "neutral": 85.0,
+    "negative": 10.0,
+    "total_posts": 20
+  },
+  "trending_topics": [
+    {
+      "topic": "safety",
+      "count": 2
+    },
+    {
+      "topic": "South Indian food",
+      "count": 1
+    },
+    {
+      "topic": "Madras cafe",
+      "count": 1
+    },
+    {
+      "topic": "best dosa",
+      "count": 1
+    },
+    {
+      "topic": "commute",
+      "count": 1
+    },
+    {
+      "topic": "rent",
+      "count": 1
+    },
+    {
+      "topic": "Mumbai",
+      "count": 1
+    },
+    {
+      "topic": "uncomfortable experience",
+      "count": 1
+    },
+    {
+      "topic": "auto driver",
+      "count": 1
+    },
+    {
+      "topic": "food suggestions",
+      "count": 1
+    }
+  ],
+  "posts": [
+    {
+      "id": "1rsrvod",
+      "source": "reddit_r/mumbai",
+      "author": "eater12334",
+      "title": "South Indian food in mumbai",
+      "content": "Ignore benne rameshwaram cafe like joints \nLet's talk OG spots like Madras cafe , poornima cafe, dakshinayan and others \nWhat is would you order at these joints like where is the best podi idli served \nWho serves the best dosa and rava dosa",
+      "url": "https://reddit.com/r/mumbai/comments/1rsrvod/south_indian_food_in_mumbai/",
+      "created_utc": 1773418913.0,
+      "timestamp": "2026-03-13T21:51:53",
+      "engagement": {
+        "upvotes": 1,
+        "downvotes": 0,
+        "comments": 2,
+        "score": 1
+      },
+      "subreddit": "mumbai",
+      "flair": "Discussion",
+      "sentiment": "positive",
+      "topics": [
+        "South Indian food",
+        "Madras cafe",
+        "best dosa"
+      ],
+      "summary": "The post recommends authentic South Indian food spots in Mumbai and asks for opinions on the best dishes."
+    },
+    {
+      "id": "1rsqzmu",
+      "source": "reddit_r/mumbai",
+      "author": "Zee1908",
+      "title": "New to Mumbai — can I rely on local trains for Kanjur Marg to Parel commute?",
+      "content": "Hi everyone,\n\nI’m shifting to Mumbai soon and wanted some advice from locals. My office is in Parel, and I’m considering renting a place around Kanjur Marg because the rents seem relatively more reasonable compared to areas closer to South Mumbai.\n\nMy main concern is the daily commute.\n\n- How practical is it to travel between Kanjur Marg and Parel for office every day?\n- What’s the usual travel time during peak hours in the local train?\n- Is it manageable long term or does it get too exhausting?\n\nI’m also a bit worried about the monsoon season since I’ve heard local trains sometimes get disrupted during heavy rains.\n\n- Does this route usually get badly affected during monsoon?\n- Would commuting still be reliable?\n\nFor context:\n\n- I’m new to Mumbai and coming from Delhi.\n- Office would likely require reaching around 9–9:30 AM and leaving around 6–6:30 PM.\n\nWould really appreciate honest advice — whether this commute is reasonable or if I should look for places closer to Parel instead.\n\nThanks in advance!",
+      "url": "https://reddit.com/r/mumbai/comments/1rsqzmu/new_to_mumbai_can_i_rely_on_local_trains_for/",
+      "created_utc": 1773416963.0,
+      "timestamp": "2026-03-13T21:19:23",
+      "engagement": {
+        "upvotes": 1,
+        "downvotes": 0,
+        "comments": 3,
+        "score": 1
+      },
+      "subreddit": "mumbai",
+      "flair": "AskMumbai",
+      "sentiment": "neutral",
+      "topics": [
+        "commute",
+        "rent",
+        "Mumbai"
+      ],
+      "summary": "A new resident is seeking advice on the practicality of commuting from Kanjur Marg to Parel for work."
+    },
+    {
+      "id": "1rsqw3x",
+      "source": "reddit_r/mumbai",
+      "author": "NeedleworkerSad4262",
+      "title": "Mens too are not safe nowadays",
+      "content": "I’m a 21M and had a really uncomfortable experience with an auto driver.\n\nWhen I got in, he started with random compliments like, “Hello handsome, you’re looking good brother,” etc. I didn’t think much of it at first. Midway he asked if I could buy him a vada pav. It felt odd but I just agreed.\n\nAfter that he tried taking a wrong route, probably assuming I was new to the area. I had 2–3 bags with me, so at first I thought maybe he was trying to steal something or take advantage of the situation.\n\nWhen we finally reached, I paid the fare but he demanded extra money. I didn’t want to argue and just wanted to leave, so I gave him another note.\n\nBut when I handed it to him, he suddenly grabbed my hand like a handshake and held it while giving this weird look and gesture, like signaling me to come inside the auto. I honestly can’t properly describe it, but it felt extremely creepy.\n\nHe was a big, heavy guy and I’m pretty skinny. For a moment I kept thinking what if he tried this somewhere quiet. Luckily the area was crowded. I immediately shouted at him and stepped away.\n\nWhat scared me more was that he waited on the other side of the road for a while. I didn’t move much because I was worried he might notice where my PG is.\n\nHonestly the whole situation left me pretty disturbed.",
+      "url": "https://reddit.com/r/mumbai/comments/1rsqw3x/mens_too_are_not_safe_nowadays/",
+      "created_utc": 1773416748.0,
+      "timestamp": "2026-03-13T21:15:48",
+      "engagement": {
+        "upvotes": 7,
+        "downvotes": 0,
+        "comments": 10,
+        "score": 7
+      },
+      "subreddit": "mumbai",
+      "flair": "Discussion",
+      "sentiment": "negative",
+      "topics": [
+        "safety",
+        "uncomfortable experience",
+        "auto driver"
+      ],
+      "summary": "A 21-year-old man shares an uncomfortable experience with an auto driver in Mumbai, highlighting issues of safety and inappropriate behavior."
+    },
+    {
+      "id": "1rsqw1o",
+      "source": "reddit_r/mumbai",
+      "author": "Cursed_Czar",
+      "title": "Any good food suggestions in goregaon (W)",
+      "content": "Hi All, \n\nAny good food suggestions in goregaon? \n\nBudget friendly of course. \n\nBut most of the places seems not to maintain much of hygeine. Considering that, kindly suggest. ",
+      "url": "https://reddit.com/r/mumbai/comments/1rsqw1o/any_good_food_suggestions_in_goregaon_w/",
+      "created_utc": 1773416742.0,
+      "timestamp": "2026-03-13T21:15:42",
+      "engagement": {
+        "upvotes": 1,
+        "downvotes": 0,
+        "comments": 0,
+        "score": 1
+      },
+      "subreddit": "mumbai",
+      "flair": "AskMumbai",
+      "sentiment": "neutral",
+      "topics": [
+        "food suggestions",
+        "Goregaon",
+        "hygiene"
+      ],
+      "summary": "The post asks for budget-friendly food suggestions in Goregaon while expressing concern about hygiene."
+    },
+    {
+      "id": "1rsqr4n",
+      "source": "reddit_r/mumbai",
+      "author": "Nightmare_nymph",
+      "title": "Looking for a female replacement in Vile Parle",
+      "content": "🌿 | For females | Move-in May 🌿\n\nGot a cozy spot opening up in a fully furnished 3BHK in Vile Parle starting May. Perfect if you want a comfortable place that feels more like a chill home than a strict hostel.\n\n🛏 Rent: ₹17,325 per person (double occupancy)\n📍 Location: Walking distance from the station – super convenient for daily travel\n🎓 Ideal for students from NM, Mithibai, NMIMS (literally a quick commute)\n\n✨ The vibe:\n• Fully furnished flat\n• Very relaxed environment\n• No unnecessary restrictions – everyone minds their business and keeps things easygoing\n• Comfortable space for studying, hanging out, and just existing peacefully\n\nIf you’re looking for a well-located, student-friendly place with good vibes, this might be your spot.\n\nDM if interested or if you want more details / pictures\n\n",
+      "url": "https://reddit.com/r/mumbai/comments/1rsqr4n/looking_for_a_female_replacement_in_vile_parle/",
+      "created_utc": 1773416437.0,
+      "timestamp": "2026-03-13T21:10:37",
+      "engagement": {
+        "upvotes": 4,
+        "downvotes": 0,
+        "comments": 1,
+        "score": 4
+      },
+      "subreddit": "mumbai",
+      "flair": "General",
+      "sentiment": "neutral",
+      "topics": [
+        "accommodation",
+        "Vile Parle",
+        "students"
+      ],
+      "summary": "The post is about a fully furnished 3BHK flat available for rent in Vile Parle, ideal for female students starting in May."
+    },
+    {
+      "id": "1rspp63",
+      "source": "reddit_r/mumbai",
+      "author": "Leading_Canary_7134",
+      "title": "Pickleball/ tennis monthly",
+      "content": "Hey I’m 25 M \n\nCan anyone suggest good pickle ball / tennis coaching on monthly basis \n\nArea would be - Andheri and vile Parle \n\nMy budget is - 4-6k monthly ",
+      "url": "https://reddit.com/r/mumbai/comments/1rspp63/pickleball_tennis_monthly/",
+      "created_utc": 1773414057.0,
+      "timestamp": "2026-03-13T20:30:57",
+      "engagement": {
+        "upvotes": 1,
+        "downvotes": 0,
+        "comments": 1,
+        "score": 1
+      },
+      "subreddit": "mumbai",
+      "flair": "General",
+      "sentiment": "neutral",
+      "topics": [
+        "pickleball",
+        "tennis",
+        "coaching"
+      ],
+      "summary": "A 25-year-old male is seeking recommendations for pickleball or tennis coaching in Andheri and Vile Parle with a budget of 4-6k monthly."
+    },
+    {
+      "id": "1rspnvr",
+      "source": "reddit_r/mumbai",
+      "author": "Daarukadevta",
+      "title": "Noticed more sharing taxis than buses from Churchgate to Gateway of India",
+      "content": "Travelled from Churchgate to Gateway of India recently and noticed something interesting.\n\nThere seem to be a lot more sharing taxis operating on that route now, while buses didn’t seem as frequent as before. Quite a few people were choosing the shared taxis instead of waiting for a bus.\n\nMaybe it’s just my observation from that day, but it felt like this option has become more common lately.\n\nCurious if others in Mumbai have noticed the same — has there actually been an increase in these sharing taxis, or has the bus frequency changed on that route? 🚕",
+      "url": "https://reddit.com/r/mumbai/comments/1rspnvr/noticed_more_sharing_taxis_than_buses_from/",
+      "created_utc": 1773413988.0,
+      "timestamp": "2026-03-13T20:29:48",
+      "engagement": {
+        "upvotes": 0,
+        "downvotes": 0,
+        "comments": 0,
+        "score": 0
+      },
+      "subreddit": "mumbai",
+      "flair": "Discussion",
+      "sentiment": "neutral",
+      "topics": [
+        "sharing taxis",
+        "buses",
+        "travel"
+      ],
+      "summary": "The post observes an increase in shared taxis on the Churchgate to Gateway of India route, noting that people are choosing them over buses."
+    },
+    {
+      "id": "1rsphf2",
+      "source": "reddit_r/mumbai",
+      "author": "chachahindustani",
+      "title": "Roam late at night on activa from andheri",
+      "content": "I’m relatively new in mumbai, have an activa and free will! Wanted to explore mumbai, is it safe to go out on activa at night (11pm-4am). If yes where should I go? Open to all kinds of experiences. I am in andheri east so that will be my starting point. ",
+      "url": "https://reddit.com/r/mumbai/comments/1rsphf2/roam_late_at_night_on_activa_from_andheri/",
+      "created_utc": 1773413593.0,
+      "timestamp": "2026-03-13T20:23:13",
+      "engagement": {
+        "upvotes": 1,
+        "downvotes": 0,
+        "comments": 1,
+        "score": 1
+      },
+      "subreddit": "mumbai",
+      "flair": "AskMumbai",
+      "sentiment": "neutral",
+      "topics": [
+        "night exploration",
+        "safety",
+        "experiences"
+      ],
+      "summary": "A new resident in Mumbai is considering a late-night exploration on their scooter, seeking advice on safety and potential destinations."
+    },
+    {
+      "id": "1rspd0z",
+      "source": "reddit_r/mumbai",
+      "author": "Hour_Cap_1174",
+      "title": "Moved to Mumbai for undergrad and my flatmates made my life hell. How do you guys even find good roommates???",
+      "content": "Moved into an unfurnished flat and had to buy everything from scratch. Furniture, utensils, appliances, everything!! Wasn't expecting a palace but still.\n\nAnd the roommates man.. unhygienic doesn't even cover it. Kitchen was always a disaster, dishes piling up for days, friends showing up at midnight on weekdays like that's completely normal. Zero respect for personal space, never contributed to groceries, never dealt with the broker, never did anything for the house basically.\n\nOh and they stole my charger and two t-shirts. TWO T-SHIRTS. I dont even know what to say.\n\n3 years of this and im genuinely done with it.\n\nHow does anyone even find decent flatmates?? Facebook groups are useless, brokers dont care, and by the time you figure out what your roommate is actually like you've already signed the lease and paid the deposit.\n\nDid everyone just get lucky or is there actually a better way to do this???",
+      "url": "https://reddit.com/r/mumbai/comments/1rspd0z/moved_to_mumbai_for_undergrad_and_my_flatmates/",
+      "created_utc": 1773413314.0,
+      "timestamp": "2026-03-13T20:18:34",
+      "engagement": {
+        "upvotes": 0,
+        "downvotes": 0,
+        "comments": 4,
+        "score": 0
+      },
+      "subreddit": "mumbai",
+      "flair": "Discussion",
+      "sentiment": "negative",
+      "topics": [
+        "roommates",
+        "unfurnished flat",
+        "unhygienic"
+      ],
+      "summary": "A student expresses frustration with their unhygienic and disrespectful flatmates and the difficulties of moving into an unfurnished flat in Mumbai."
+    },
+    {
+      "id": "1rspcco",
+      "source": "reddit_r/mumbai",
+      "author": "IndianJohnWick007",
+      "title": "Table at Americano",
+      "content": "Hi. To put it in short, my girlfriend really wants to go to Americano (Italian restaurant in Fort, Mumbai) and I cannot find any reservation options online. I tried connecting to the mobile numbers available on their website but couldn't. \nWanted any help or suggestions regarding the same, how can I get a table for 2 there (2 weeks later)?",
+      "url": "https://reddit.com/r/mumbai/comments/1rspcco/table_at_americano/",
+      "created_utc": 1773413270.0,
+      "timestamp": "2026-03-13T20:17:50",
+      "engagement": {
+        "upvotes": 32,
+        "downvotes": 0,
+        "comments": 9,
+        "score": 32
+      },
+      "subreddit": "mumbai",
+      "flair": "General",
+      "sentiment": "neutral",
+      "topics": [
+        "reservation",
+        "Americano",
+        "Italian restaurant"
+      ],
+      "summary": "The user is seeking help to make a reservation at Americano, an Italian restaurant in Fort, Mumbai, as they couldn't find any reservation options online or connect via the provided mobile numbers."
+    },
+    {
+      "id": "1rshcgc",
+      "source": "reddit_r/india",
+      "author": "Melodic-Kiwi7078",
+      "title": "Pregnant woman killed by truck in our area how many accidents before authorities act?",
+      "content": "very tragic incident happened in my area (Kokanipada, Mumbai – R/North Ward). A truck hit a pregnant woman on the road and she died. Her lower body was severely crushed in the accident. She also had a small child with her at the time.\n\nThe main reason this keeps happening is that there is a quarry nearby, so heavy trucks constantly pass through our residential lanes. Many of these drivers move fast and don’t even check if there are pedestrians, children, or elderly people on the road.\n\nThis is not the first incident. There have already been multiple accidents in our area because of these trucks. People are genuinely scared to walk on the road now.\n\nResidents are now trying to raise this issue with BMC (R/North Ward) and local authorities. What we are asking for is very basic:\n\n• Restrict heavy trucks in residential lanes or apply No-Entry during daytime\n• Install speed breakers and warning signs\n• Increase traffic monitoring in the area\n\nToday it was a pregnant woman. Tomorrow it could be anyone from our families.\n\nIf anyone here knows the proper way to escalate such issues with BMC or Mumbai Traffic Police so that real action is taken, please share your advice.",
+      "url": "https://reddit.com/r/india/comments/1rshcgc/pregnant_woman_killed_by_truck_in_our_area_how/",
+      "created_utc": 1773389083.0,
+      "timestamp": "2026-03-13T13:34:43",
+      "engagement": {
+        "upvotes": 13,
+        "downvotes": 0,
+        "comments": 1,
+        "score": 13
+      },
+      "subreddit": "india",
+      "flair": "Crime",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Pregnant woman killed by truck in our area how many accidents before authorities act?"
+    },
+    {
+      "id": "1rrfhws",
+      "source": "reddit_r/india",
+      "author": "Illustrious-Read-60",
+      "title": "Maharashtra State Election Commission avoiding to take action against the Speaker of the Legislative Assembly, Rahul Narvekar.",
+      "content": "On 30 December 2025, in Colaba A ward office Rahul Narvekar’s brother, sister-in-law, and a close relative were the BJP candidates for the Bruhanmumbai Municipal Corporation (BMC) election. The Returning Officer (RO) rejected the forms of 15 candidates from opposition parties including AAP and JD-S, although the 15 candidates had paid and got the token. Narvekar was accused to be responsible for this and a video was shared on social media. The AAP, INC, SS-UBT, SP lodged complaints against Narvekar for not giving them a chance to contest the polls. TOI reports that AAP and JD-S had complained that the RO acted at the behest of the Legislative Assembly Speaker Rahul Narwekar, who is from the BJP. Three of his relatives were contesting the BMC election and he was present at the RO's office when the nominations were being filed, the parties had stated.\n\nThe State Election Commission asked the State Election Commissioner and Election Officer to submit a report on the case. \n\n&gt;“The retiring officer Iqbal Singh Chahal retired without giving the report. (We) Have demanded the report from the retiring officers with him. The decision on taking action will be taken after the getting the report.\"\n— Dinesh Waghmare\n&gt;\n&gt;State Election Commissioner \n\nIn the report of the Bhushan Gagrani (the Municipal Commissioner of the Bruhanmumbai Municipal Corporation), the act of Returning Officer Krushna Jadhav is mentioned to be ‘administratively wrong’. After AAP lodged a complaint with the SEC, Gagrani has submitted a report pointing out that although Jadhav's actions were legally sound, he should have been administratively careful.\n\nThe State Election Commission sent this case to the Chief Election Observer Iqbal Singh Chahal in the second week of January. Chahal was then the Additional Chief Secretary of Department of Home Affairs, Maharashtra. Meanwhile, Chahal retired from his post on 30 January 2026. Then he was appointed as the Chairman with MoS rank, of the Mumbai Police Housing Township Project.\n\nDespite demands from the complainants, the State Election Commission has not given the CCTV footage of the place yet. \n\nThere is a modus operandi of an Election Observer. Until the the election process is over, the observer has to submit a report at five instances. Chahal retired from the post of retiring officer a month after the incident, still he did not give the report. Also, Chahal was appointed as the retiring officer not by post but by name, so he is bound to give the report even after retirement from the post. Now the State Election Commission has asked Narvekar and the three Additional Retiring Officers of District Collector rank Abhijit Ghorpade, Ajay Pawar, and Jagannath Virkar, to give the report. \n\nTwo months have passed since but the State Election Commission has not taken a decision yet. The State Election Commission is avoiding to take action against Rahul Narvekar, giving the excuse that the chief observer of the BMC election, Iqbal Singh Chahal, did not give a report of the incident before retiring from the post.\n\nThe JD-S State unit chief has revoked the complaint of former MP Haribhau Rathod, who was one of the complainants.\n\nIt is important to resolve the complaints of candidates before voting. Had this happened in this case, the 15 complainant candidates would have had to be given the chance to contest the elections in the ward number 225, 226, and 227 where Narvekar’s relatives were BJP candidates.\n\nRahul Narvekar’s all three relatives have won in the respective wards in the BMC election.\n\nSources:\nhttps://www.loksatta.com/mumbai/rahul-narvekar-bmc-election-row-complaint-delay-iqbal-singh-chahal-report-state-election-commission-news-mumbai-print-news-amy-95-5757944/\n\nhttps://timesofindia.indiatimes.com/city/mumbai/bmc-polls-row-maharastra-sec-seeks-report-on-poll-officers-action-in-colaba/articleshow/126426407.cms\n\n\n\n\n____________________\n\nPast record of Rahul Narvekar\n\nThe property of Rahul Narvekar’s brothers was worth ₹6 crore in 2017. It rose to ₹124 crore in seven years. There has been an increase in the IT invoice of Narvekar’s wife within three years. According to Alibag locals, nobody's work is done in the sub registrar office on the day of transactions related to Rahul Narvekar’s family. Narvekar's family has bought land in Alibag on a large scale in the past three years.\n\nRahul Narvekar and others trespassed and measured land on a farmer's private property, both of which is illegal. A [video](https://youtu.be/DhcoJ4COedU?si=lldeOa2R6CCYs3PM) of this is available. Although Narvekar later told that he went there to mediate, the video shows that Narvekar and others who accompanied him quietly left that person's private property after the owner couple objected to Narvekar’s and others’ trespassing and measuring of their private property.",
+      "url": "https://reddit.com/r/india/comments/1rrfhws/maharashtra_state_election_commission_avoiding_to/",
+      "created_utc": 1773285043.0,
+      "timestamp": "2026-03-12T08:40:43",
+      "engagement": {
+        "upvotes": 8,
+        "downvotes": 0,
+        "comments": 1,
+        "score": 8
+      },
+      "subreddit": "india",
+      "flair": "Politics",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Maharashtra State Election Commission avoiding to take action against the Speaker of the Legislative Assembly, Rahul Narvekar."
+    },
+    {
+      "id": "1rr7uch",
+      "source": "reddit_r/india",
+      "author": "Equivalent_Summer526",
+      "title": "18F Science student in a gap year: Is Law actually for \"failures\"? Targeting GLC/ILS for UPSC/MBA",
+      "content": "I am currently in a gap year. I’m a Maharashtra candidate prepping for the MH CET Law exam in May. I’m strictly targeting GLC Mumbai or ILS Pune, but I’m facing a lot of pushback at home and need some real advice.\n\nI come from a family of doctors and engineers. Since I was a science student, my parents and teachers think I’m choosing Law because I couldn't crack NEET or JEE. They literally told me Law is a \"fallback for failures\" who have no other options.\n\n​The thing is, I actually find Law fascinating. I’m a 1st-gen student with no godfather in the legal field, but I have a very clear plan:\n​UPSC: I want to use the 5-year LLB to master the Constitution and Polity early on. I feel like it's a way better foundation than a basic BA.\n​MBA: If I pivot to corporate, I’ve heard IIMs give Academic Diversity points to law grads. Is it actually easier to get into an IIM as a lawyer compared to an engineer?\n\nI’m a good student, but I’m starting to doubt myself because of the lack of support.My questions:\n​Does the Non-Engineer tag actually help during MBA admissions/interviews?\n​Should I just give in and do Engineering for the safety, or is the GLC/ILS worth fighting for if my goal is UPSC or mba?",
+      "url": "https://reddit.com/r/india/comments/1rr7uch/18f_science_student_in_a_gap_year_is_law_actually/",
+      "created_utc": 1773266261.0,
+      "timestamp": "2026-03-12T03:27:41",
+      "engagement": {
+        "upvotes": 2,
+        "downvotes": 0,
+        "comments": 6,
+        "score": 2
+      },
+      "subreddit": "india",
+      "flair": "Careers",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "18F Science student in a gap year: Is Law actually for \"failures\"? Targeting GLC/ILS for UPSC/MBA"
+    },
+    {
+      "id": "1rqug2z",
+      "source": "reddit_r/india",
+      "author": "Raj_Valiant3011",
+      "title": "Darwin Labs co-founder intercepted at Mumbai airport, arrested by CBI in GainBitcoin cryptocurrency fraud case",
+      "content": "",
+      "url": "https://reddit.com/r/india/comments/1rqug2z/darwin_labs_cofounder_intercepted_at_mumbai/",
+      "created_utc": 1773237395.0,
+      "timestamp": "2026-03-11T19:26:35",
+      "engagement": {
+        "upvotes": 8,
+        "downvotes": 0,
+        "comments": 0,
+        "score": 8
+      },
+      "subreddit": "india",
+      "flair": "Crime",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Darwin Labs co-founder intercepted at Mumbai airport, arrested by CBI in GainBitcoin cryptocurrency fraud case"
+    },
+    {
+      "id": "1rp70ih",
+      "source": "reddit_r/india",
+      "author": "Sea_Pair_1273",
+      "title": "Shortage of LPG cooking gas engulfs Mumbai, supply of commercial cylinders halted, say dealers | Mumbai News - The Times of India",
+      "content": "",
+      "url": "https://reddit.com/r/india/comments/1rp70ih/shortage_of_lpg_cooking_gas_engulfs_mumbai_supply/",
+      "created_utc": 1773078123.0,
+      "timestamp": "2026-03-09T23:12:03",
+      "engagement": {
+        "upvotes": 265,
+        "downvotes": 0,
+        "comments": 38,
+        "score": 265
+      },
+      "subreddit": "india",
+      "flair": "Politics",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Shortage of LPG cooking gas engulfs Mumbai, supply of commercial cylinders halted, say dealers | Mumbai News - The Times of India"
+    },
+    {
+      "id": "1rnda0d",
+      "source": "reddit_r/india",
+      "author": "Dull_Department_2966",
+      "title": "Bombay High Court says prayers at any spot not a religious right, denies permission to namaz near Mumbai airport citing security",
+      "content": "",
+      "url": "https://reddit.com/r/india/comments/1rnda0d/bombay_high_court_says_prayers_at_any_spot_not_a/",
+      "created_utc": 1772898617.0,
+      "timestamp": "2026-03-07T21:20:17",
+      "engagement": {
+        "upvotes": 1247,
+        "downvotes": 0,
+        "comments": 81,
+        "score": 1247
+      },
+      "subreddit": "india",
+      "flair": "Law &amp; Courts",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Bombay High Court says prayers at any spot not a religious right, denies permission to namaz near Mumbai airport citing security"
+    },
+    {
+      "id": "1rnaslr",
+      "source": "reddit_r/india",
+      "author": "gogohunting",
+      "title": "Is an Online MBA from NMIMS (NGASCE) worth it? Need honest advice.",
+      "content": "Hey guys,\n\nI’m currently working at **Amazon** in an Operations/Process role (been here about 4 years). Before this, I was at **Accenture**.\n\nOn paper, my career looks good—I’ve got the big brands and my metrics are solid (99.8% accuracy even with high volumes). But I feel stuck. I recently applied for some Client Service/Project Management roles at firms like Guidepoint and Native, and the feedback was basically: *\"You’re great at operations, but we need someone with more 'commercial/revenue' sense.\"*\n\nI can't quit my job for a full-time MBA (bills to pay), so I’m looking at the **NMIMS Online MBA (NGASCE)**.\n\n**I need the honest truth from people who’ve actually done it:**\n\n1. **Will recruiters care?** Does having \"NMIMS Online\" on my CV actually help me move from a back-end Ops role to a front-end/Client Growth role in Mumbai, or will they just see it as a \"bought\" degree?\n2. **The \"Ops\" Specialization:** Since I’m already at Amazon, does doing an MBA in Operations even add value? Or should I go for something like Business Analytics to look \"more technical\"?\n3. **The Filter:** Does this degree actually clear the \"Master's Required\" HR filter at big firms, or do they only count full-time MBAs?\n4. **Alternatives:** Is there a better way to spend that 1.5 - 2 lakhs to pivot my career?\n\nI’m not expecting to become a CEO overnight, I just don’t want to be stuck processing tickets forever. If you’ve done the program or hire people who have, please let me know if it's worth the time and money.",
+      "url": "https://reddit.com/r/india/comments/1rnaslr/is_an_online_mba_from_nmims_ngasce_worth_it_need/",
+      "created_utc": 1772892284.0,
+      "timestamp": "2026-03-07T19:34:44",
+      "engagement": {
+        "upvotes": 1,
+        "downvotes": 0,
+        "comments": 4,
+        "score": 1
+      },
+      "subreddit": "india",
+      "flair": "Careers",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Is an Online MBA from NMIMS (NGASCE) worth it? Need honest advice."
+    },
+    {
+      "id": "1rn530l",
+      "source": "reddit_r/india",
+      "author": "ExtensionForce4354",
+      "title": "As modern life gets busier, are more people in India turning toward spirituality again?",
+      "content": "Hello everyone,\n\nI was born and brought up in Mumbai, a city that has always been fast, intense and constantly moving. Over the years I’ve watched how the pace of life across many parts of India has steadily picked up, long commutes in big cities, financial responsibilities, and the general rush of modern life and over all development \n\nAt the same time, I’ve been noticing another interesting shift around the country. Crystals, meditation circles, spiritual workshops, energy practices and discussions around esoteric traditions or even para - normal experiences seem far more common now than they used to be, in person or social media boom\n\nHaving spent many years working with crystals and studying different spiritual and esoteric traditions, and being involved in paranormal investigations and mediumship work, it’s been quite interesting for me to watch this curiosity slowly becoming more visible in everyday conversations.\n\nIt also feels like more and more people are naturally inclining/ returning toward these kinds of practices or traditions at certain points in their lives, sometimes searching for balance, meaning, or simply a different way of understanding their experiences.\n\nIt makes me wonder about something though.\n\nIs the rising stress of modern life pushing more people toward spirituality and these practices in search of balance?\nOr is the growing awareness of these traditions simply making us notice them more around us?\n\nJust something I’ve been observing over time, and I’m curious how others across India see this shift.",
+      "url": "https://reddit.com/r/india/comments/1rn530l/as_modern_life_gets_busier_are_more_people_in/",
+      "created_utc": 1772873325.0,
+      "timestamp": "2026-03-07T14:18:45",
+      "engagement": {
+        "upvotes": 0,
+        "downvotes": 0,
+        "comments": 3,
+        "score": 0
+      },
+      "subreddit": "india",
+      "flair": "Culture &amp; Heritage ",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "As modern life gets busier, are more people in India turning toward spirituality again?"
+    },
+    {
+      "id": "1rmn6qw",
+      "source": "reddit_r/india",
+      "author": "Curiousafari",
+      "title": "26M Left a 23k BPO job for engineering career, now getting 12–18k offers. Did i make a mistake?",
+      "content": "Hi everyone,\nI’m 26 and completed my BTech in Electrical Engineering in 2023 from a tier 3 college\nAfter graduating, I worked in a BPO/operations role earning around ₹23k/month. But the work felt repetitive and didn’t seem to have much long-term growth, so I left it to try building a career in engineering.\nAfter about 3–4 months of unemployment, I finally got two offers in the Electrical MEP field:\nMumbai – Electrical MEP role (design calculations + AutoCAD), ₹18k/month. However, the company has some reviews online saying salaries are sometimes delayed.\nSurat – Electrical MEP role (drafting + calculations), ₹12k for 3 months → ₹15k after. Small company (~30 employees).\nAt the same time, I also recently received another BPO offer of around ₹28k/month, which is much higher than these engineering salaries.\nNow I’m confused. If I go back to BPO, the pay is better immediately. But if I stay in electrical engineering, it might have a better future in the next few years since it’s a skill-based field.\nDid I make the wrong decision leaving the BPO job, and should I go back to it or continue in engineering for the long term?",
+      "url": "https://reddit.com/r/india/comments/1rmn6qw/26m_left_a_23k_bpo_job_for_engineering_career_now/",
+      "created_utc": 1772824390.0,
+      "timestamp": "2026-03-07T00:43:10",
+      "engagement": {
+        "upvotes": 11,
+        "downvotes": 0,
+        "comments": 19,
+        "score": 11
+      },
+      "subreddit": "india",
+      "flair": "Careers",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "26M Left a 23k BPO job for engineering career, now getting 12–18k offers. Did i make a mistake?"
+    },
+    {
+      "id": "1rla9eu",
+      "source": "reddit_r/india",
+      "author": "Cybertronian1512",
+      "title": "Filmmaker Anand Patwardhan denied entry at Mumbai University",
+      "content": "",
+      "url": "https://reddit.com/r/india/comments/1rla9eu/filmmaker_anand_patwardhan_denied_entry_at_mumbai/",
+      "created_utc": 1772692190.0,
+      "timestamp": "2026-03-05T11:59:50",
+      "engagement": {
+        "upvotes": 213,
+        "downvotes": 0,
+        "comments": 4,
+        "score": 213
+      },
+      "subreddit": "india",
+      "flair": "Politics",
+      "sentiment": "neutral",
+      "topics": [],
+      "summary": "Filmmaker Anand Patwardhan denied entry at Mumbai University"
+    }
+  ],
+  "cost_tracking": {
+    "tokens_used": 2500,
+    "estimated_cost": 0.0020000000000000005
+  }
+}

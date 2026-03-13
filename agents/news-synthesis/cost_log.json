@@ -1,0 +1,83 @@
+[
+  {
+    "timestamp": "2026-03-11T23:35:34.870250",
+    "operation": "news_analysis",
+    "model": "Amazon Nova 2 Lite",
+    "total_articles": 10,
+    "relevant_articles": 2,
+    "tokens_used": 2585,
+    "estimated_cost": 0.0014377
+  },
+  {
+    "timestamp": "2026-03-11T23:43:16.714033",
+    "operation": "news_analysis",
+    "model": "Amazon Nova 2 Lite",
+    "total_articles": 10,
+    "relevant_articles": 2,
+    "tokens_used": 2874,
+    "estimated_cost": 0.0021602
+  },
+  {
+    "timestamp": "2026-03-11T23:50:39.390736",
+    "operation": "news_analysis",
+    "model": "Amazon Nova 2 Lite",
+    "total_articles": 10,
+    "relevant_articles": 2,
+    "tokens_used": 2878,
+    "estimated_cost": 0.0021702
+  },
+  {
+    "timestamp": "2026-03-13T22:50:43.674912",
+    "operation": "news_analysis",
+    "model": "Amazon Nova 2 Lite",
+    "total_articles": 10,
+    "relevant_articles": 2,
+    "tokens_used": 2715,
+    "estimated_cost": 0.0017627
+  },
+  {
+    "timestamp": "2026-03-13T23:05:44.250904",
+    "operation": "news_analysis",
+    "model": "Amazon Nova 2 Lite",
+    "total_articles": 10,
+    "relevant_articles": 2,
+    "tokens_used": 2710,
+    "estimated_cost": 0.0017502000000000001
+  },
+  {
+    "timestamp": "2026-03-13T23:13:05.918357",
+    "operation": "news_analysis",
+    "model": "Amazon Nova 2 Lite",
+    "total_articles": 10,
+    "relevant_articles": 2,
+    "tokens_used": 2824,
+    "estimated_cost": 0.0020352
+  },
+  {
+    "timestamp": "2026-03-13T23:14:43.806845",
+    "operation": "news_analysis",
+    "model": "Amazon Nova 2 Lite",
+    "total_articles": 10,
+    "relevant_articles": 2,
+    "tokens_used": 2585,
+    "estimated_cost": 0.0014377
+  },
+  {
+    "timestamp": "2026-03-13T23:21:33.536357",
+    "operation": "news_analysis",
+    "model": "Amazon Nova 2 Lite",
+    "total_articles": 10,
+    "relevant_articles": 2,
+    "tokens_used": 2989,
+    "estimated_cost": 0.0024476999999999997
+  },
+  {
+    "timestamp": "2026-03-13T23:22:01.554262",
+    "operation": "news_analysis",
+    "model": "Amazon Nova 2 Lite",
+    "total_articles": 10,
+    "relevant_articles": 2,
+    "tokens_used": 2583,
+    "estimated_cost": 0.0014327
+  }
+]

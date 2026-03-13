@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2026-03-11T21:54:42.429949",
+    "operation": "image_analysis",
+    "model": "Amazon Nova 2 Omni",
+    "images_analyzed": 3,
+    "tokens_used": 5846,
+    "estimated_cost": 0.0065232
+  },
+  {
+    "timestamp": "2026-03-11T22:15:50.017373",
+    "operation": "image_analysis",
+    "model": "Amazon Nova 2 Omni",
+    "images_analyzed": 3,
+    "tokens_used": 5788,
+    "estimated_cost": 0.0062448
+  }
+]
