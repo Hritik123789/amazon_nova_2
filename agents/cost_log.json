@@ -134,5 +134,14 @@
     "estimated_cost": 0.0012187,
     "num_questions": 5,
     "num_documents": 69
+  },
+  {
+    "agent": "voice_briefing_generator",
+    "timestamp": "2026-03-14T10:57:44.340759",
+    "model": "Amazon Polly Neural TTS",
+    "operation": "text_to_speech",
+    "tokens_used": 1069,
+    "estimated_cost": 0.017104,
+    "audio_duration_seconds": 70.4
   }
 ]
