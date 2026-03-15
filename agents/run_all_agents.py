@@ -215,6 +215,11 @@ class AgentOrchestrator:
                 'env': {'MAX_ARTICLES': '10'}
             },
             {
+                'script': 'nova_act_permit_checker.py',
+                'name': 'Nova Act UI Automation (Permit Checker)',
+                'env': {'NOVA_ACT_API_KEY': os.getenv('NOVA_ACT_API_KEY', '')}
+            },
+            {
                 'script': 'permit-monitor/permit_monitor_real.py',
                 'name': 'Permit Monitor Agent (Real Scraping)',
                 'env': {}
@@ -297,8 +302,12 @@ class AgentOrchestrator:
                 'name': 'Investment Insights'
             },
             {
-                'script': 'features/community_pulse_nova.py',
-                'name': 'Community Pulse'
+                'script': 'features/community_pulse_enhanced.py',
+                'name': 'Community Pulse (Enhanced)'
+            },
+            {
+                'script': 'voice_qa_realtime.py',
+                'name': 'Voice Q&A System (Nova + Polly)'
             }
         ]
         

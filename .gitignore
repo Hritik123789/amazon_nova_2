@@ -98,3 +98,30 @@ function.zip
 
 # CloudFormation
 packaged.yaml
+
+# CityPulse Specific
+agents/.cache/
+agents/.rag_cache/
+agents/__pycache__/
+agents/utils/__pycache__/
+agents/data/*.mp3
+agents/data/*.wav
+agents/data/*.pkl
+agents/cost_log.json
+agents/cost_log.json.lock
+cost_log.json
+*.lock
+
+# Generated data (keep structure, ignore content)
+agents/data/voice_response.*
+agents/permit-monitor/.cache/
+agents/permit-monitor/.processed_permits.json
+
+# Kiro IDE
+.kiro/
+
+# Sample images (keep README only)
+sample_images/*.jpg
+sample_images/*.png
+sample_images/*.jpeg
+!sample_images/README.md
