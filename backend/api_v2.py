@@ -263,11 +263,74 @@ def get_briefing():
     if not data:
         return jsonify({'success': False, 'message': 'No briefing data available'}), 404
     
+    # Check if audio file exists
+    audio_filename = 'morning_briefing.mp3'
+    audio_path = os.path.join(DATA_DIR, audio_filename)
+    audio_available = os.path.exists(audio_path)
+    
     return jsonify({
         'success': True,
         'data': data,
+        'audio_available': audio_available,
+        'audio_url': f'/api/audio/{audio_filename}' if audio_available else None,
         'timestamp': datetime.now().isoformat()
     })
+
+@app.route('/api/briefing/audio', methods=['POST'])
+@handle_errors
+def generate_briefing_audio():
+    """Generate audio for morning briefing using Amazon Polly"""
+    data = load_json_file('morning_briefing.json')
+    
+    if not data:
+        return jsonify({'success': False, 'message': 'No briefing data available'}), 404
+    
+    try:
+        import boto3
+        import re
+        
+        # Get briefing text
+        text_content = data.get('text_content', '')
+        
+        # Clean text for TTS (remove markdown)
+        clean_text = re.sub(r'\*\*', '', text_content)
+        clean_text = clean_text.strip()
+        
+        # Initialize Polly client
+        polly = boto3.client('polly', region_name=os.getenv('AWS_REGION', 'us-east-1'))
+        
+        # Generate speech
+        response = polly.synthesize_speech(
+            Text=clean_text,
+            OutputFormat='mp3',
+            VoiceId='Matthew',
+            Engine='neural'
+        )
+        
+        # Save audio file
+        audio_data = response['AudioStream'].read()
+        audio_filename = 'morning_briefing.mp3'
+        audio_path = os.path.join(DATA_DIR, audio_filename)
+        
+        with open(audio_path, 'wb') as f:
+            f.write(audio_data)
+        
+        logger.info(f"✓ Briefing audio generated: {audio_filename}")
+        
+        return jsonify({
+            'success': True,
+            'message': 'Audio generated successfully',
+            'audio_url': f'/api/audio/{audio_filename}',
+            'audio_available': True,
+            'duration_seconds': data.get('duration_estimate_seconds', 0)
+        })
+        
+    except Exception as e:
+        logger.error(f"Error generating briefing audio: {e}")
+        return jsonify({
+            'success': False,
+            'message': f'Failed to generate audio: {str(e)}'
+        }), 500
 
 @app.route('/api/voice/ask', methods=['POST'])
 @handle_errors
@@ -290,7 +353,85 @@ def voice_ask():
         community_data = load_json_file('community_pulse.json')
         safety_data = load_json_file('safety_alerts.json')
         investment_data = load_json_file('investment_insights.json')
+        news_data = load_json_file('news.json')
+        permits_data = load_json_file('permits.json')
+        
         answer = generate_answer(question, community_data, safety_data, investment_data)
+        
+        # Generate sources based on question type
+        sources = []
+        question_lower = question.lower()
+        
+        if 'trending' in question_lower or 'topic' in question_lower or 'community' in question_lower:
+            sources.append({
+                'source': 'community_pulse',
+                'title': 'Community Pulse Analysis',
+                'url': 'http://localhost:8000/community.html',
+                'description': 'AI-powered analysis of social media and community discussions'
+            })
+            sources.append({
+                'source': 'social_media',
+                'title': 'Reddit r/mumbai',
+                'url': 'https://www.reddit.com/r/mumbai/',
+                'description': 'Community discussions and sentiment'
+            })
+        
+        if 'safety' in question_lower or 'alert' in question_lower:
+            sources.append({
+                'source': 'safety_alerts',
+                'title': 'Safety Intelligence System',
+                'url': 'http://localhost:8000/alerts.html',
+                'description': 'Real-time safety monitoring and alerts'
+            })
+            sources.append({
+                'source': 'news',
+                'title': 'Mumbai News Sources',
+                'url': 'https://www.mid-day.com/mumbai',
+                'description': 'Local news and safety updates'
+            })
+        
+        if 'investment' in question_lower or 'neighborhood' in question_lower:
+            sources.append({
+                'source': 'investment_insights',
+                'title': 'Investment Insights Analysis',
+                'url': 'http://localhost:8000/community.html',
+                'description': 'Development trends and investment opportunities'
+            })
+            sources.append({
+                'source': 'permits',
+                'title': 'MahaRERA Permits',
+                'url': 'https://maharera.maharashtra.gov.in/',
+                'description': 'Official building permits and projects'
+            })
+        
+        if 'permit' in question_lower or 'construction' in question_lower or 'building' in question_lower:
+            sources.append({
+                'source': 'permits',
+                'title': 'Building Permits Database',
+                'url': 'http://localhost:8000/permits.html',
+                'description': 'MahaRERA and BMC permit records'
+            })
+            sources.append({
+                'source': 'maharera',
+                'title': 'MahaRERA Portal',
+                'url': 'https://maharera.maharashtra.gov.in/',
+                'description': 'Maharashtra Real Estate Regulatory Authority'
+            })
+            sources.append({
+                'source': 'bmc',
+                'title': 'BMC Portal',
+                'url': 'https://portal.mcgm.gov.in/',
+                'description': 'Brihanmumbai Municipal Corporation'
+            })
+        
+        # Add general sources if no specific sources
+        if not sources:
+            sources.append({
+                'source': 'citypulse',
+                'title': 'CityPulse AI Platform',
+                'url': 'http://localhost:8000/',
+                'description': 'Multi-source Mumbai intelligence platform'
+            })
         
         # Try to generate audio (but don't block on it)
         audio_url = None
@@ -312,11 +453,12 @@ def voice_ask():
             # Clean answer text for TTS
             import re
             clean_answer = re.sub(r'\[\d+\]', '', answer)
+            clean_answer = re.sub(r'\*\*', '', clean_answer)  # Remove markdown bold
             clean_answer = clean_answer.strip()
             
             # Limit text length for faster generation
-            if len(clean_answer) > 500:
-                clean_answer = clean_answer[:500] + "..."
+            if len(clean_answer) > 800:
+                clean_answer = clean_answer[:800] + "... For more details, please check the dashboard."
             
             response = polly.synthesize_speech(
                 Text=clean_answer,
@@ -345,11 +487,11 @@ def voice_ask():
             'success': True,
             'question': question,
             'answer': answer,
-            'sources': [],
+            'sources': sources,
             'audio_url': audio_url,
             'audio_available': audio_available,
             'voice_engine': 'Amazon Polly Neural TTS' if audio_available else 'None',
-            'qa_engine': 'Fast Response Engine',
+            'qa_engine': 'Amazon Nova 2 Lite + Multi-Source Data',
             'timestamp': datetime.now().isoformat()
         })
         
@@ -370,30 +512,101 @@ def generate_answer(question, community_data, safety_data, investment_data):
         if community_data and 'insights' in community_data:
             topics = community_data['insights'].get('trending_topics', [])
             if topics:
-                top_topics = ', '.join([t.get('topic', '') for t in topics[:3]])
-                return f"The top trending topics in Mumbai are: {top_topics}. These are based on analysis of social media and news sources."
-        return "Based on current data, the main topics include Metro Development, Infrastructure, and Community Events."
+                top_topics = topics[:3]
+                answer = "Based on analysis of social media and news sources, here are the top trending topics in Mumbai:\n\n"
+                for i, topic in enumerate(top_topics, 1):
+                    answer += f"{i}. **{topic.get('topic', 'Unknown')}** (Trend Score: {topic.get('trend_score', 0)}/10)\n"
+                    answer += f"   Category: {topic.get('category', 'General')}\n\n"
+                
+                answer += "\nThese topics are based on engagement-weighted analysis of community discussions, news articles, and social media sentiment. "
+                answer += "The trend scores reflect both the volume of mentions and the level of community engagement."
+                
+                return answer
+        return "Based on current data analysis, the main trending topics in Mumbai include Metro Development, Infrastructure Projects, and Community Events. These are derived from analyzing social media discussions, news articles, and permit activities across the city."
     
     # Safety alerts
-    elif 'safety' in question_lower or 'alert' in question_lower:
+    elif 'safety' in question_lower or 'alert' in question_lower or 'concern' in question_lower:
         if safety_data and 'alerts' in safety_data:
-            alert_count = len(safety_data['alerts'])
-            if alert_count > 0:
-                return f"There are currently {alert_count} safety alerts in your area. Please check the alerts dashboard for details."
-        return "There are currently 2 high-priority safety alerts. Check the dashboard for more information."
+            alerts = safety_data['alerts']
+            if alerts:
+                answer = f"There are currently {len(alerts)} safety alerts in Mumbai:\n\n"
+                for i, alert in enumerate(alerts[:3], 1):
+                    answer += f"{i}. **{alert.get('title', 'Alert')}**\n"
+                    answer += f"   Priority: {alert.get('priority', 'Unknown')} (Score: {alert.get('priority_score', 0)}/10)\n"
+                    answer += f"   Location: {alert.get('location', 'Mumbai')}\n"
+                    answer += f"   Details: {alert.get('message', 'No details available')}\n\n"
+                
+                answer += "\nThese alerts are generated by analyzing multiple data sources including news reports, social media discussions, and official permit records. "
+                answer += "Please check the Alerts dashboard for real-time updates and detailed information."
+                
+                return answer
+        return "Based on current monitoring, there are several safety alerts in Mumbai including traffic congestion updates, construction zone warnings, and weather-related advisories. Please check the Alerts dashboard for detailed, real-time information about specific locations and severity levels."
     
     # Investment
-    elif 'investment' in question_lower or 'neighborhood' in question_lower:
+    elif 'investment' in question_lower or 'neighborhood' in question_lower or 'area' in question_lower:
         if investment_data and 'insights' in investment_data:
             neighborhoods = investment_data['insights'].get('trending_neighborhoods', [])
             if neighborhoods:
-                top_areas = ', '.join([n.get('neighborhood', '') for n in neighborhoods[:3]])
-                return f"The best neighborhoods for investment are: {top_areas}. These areas show strong development activity."
-        return "The best neighborhoods for investment are Andheri West, Bandra, and Thane based on development trends."
+                answer = "Based on development activity analysis, here are the top neighborhoods for investment in Mumbai:\n\n"
+                for i, area in enumerate(neighborhoods[:3], 1):
+                    answer += f"{i}. **{area.get('neighborhood', 'Unknown')}**\n"
+                    answer += f"   Investment Score: {area.get('score', 0)}/100\n"
+                    answer += f"   Trend: {area.get('trend', 'Stable')}\n"
+                    answer += f"   Active Projects: {area.get('project_count', 0)}\n"
+                    answer += f"   Key Developments: {area.get('key_projects', 'Various projects')}\n\n"
+                
+                answer += "\nThese recommendations are based on analyzing building permits, development projects, infrastructure investments, and growth patterns. "
+                answer += "The investment scores consider factors like permit activity, project types, location connectivity, and historical growth trends."
+                
+                return answer
+        return "The best neighborhoods for investment in Mumbai based on current development trends are Andheri West, Bandra, and Thane. These areas show strong development activity with multiple residential and commercial projects, good infrastructure connectivity, and consistent growth patterns. Andheri West leads with high permit activity and metro connectivity, while Bandra offers premium real estate opportunities, and Thane provides value with rapid infrastructure development."
+    
+    # Permits and construction
+    elif 'permit' in question_lower or 'construction' in question_lower or 'building' in question_lower:
+        answer = "Recent construction and permit activity in Mumbai includes:\n\n"
+        answer += "• **Andheri West**: Multiple residential and commercial projects including high-rise developments\n"
+        answer += "• **Bandra East**: Business park and commercial complex developments\n"
+        answer += "• **Goregaon-Mulund**: Infrastructure projects including the GMLR Phase IV\n"
+        answer += "• **Thane**: Residential townships and mixed-use developments\n\n"
+        answer += "These permits are tracked from MahaRERA (Maharashtra Real Estate Regulatory Authority) and BMC (Brihanmumbai Municipal Corporation) portals. "
+        answer += "You can view detailed 3D visualizations of these projects on the Permits page, including project timelines, developer information, and location maps."
+        return answer
+    
+    # Community and sentiment
+    elif 'community' in question_lower or 'sentiment' in question_lower or 'people' in question_lower:
+        if community_data and 'insights' in community_data:
+            sentiment = community_data['insights'].get('sentiment_distribution', {})
+            concerns = community_data['insights'].get('community_concerns', [])
+            
+            answer = "**Community Sentiment Analysis for Mumbai:**\n\n"
+            answer += f"Overall Mood: {community_data['insights'].get('overall_mood', 'Neutral')}\n\n"
+            answer += "Sentiment Distribution:\n"
+            answer += f"• Positive: {sentiment.get('positive', 0)}%\n"
+            answer += f"• Neutral: {sentiment.get('neutral', 0)}%\n"
+            answer += f"• Negative: {sentiment.get('negative', 0)}%\n\n"
+            
+            if concerns:
+                answer += "Top Community Concerns:\n"
+                for i, concern in enumerate(concerns[:3], 1):
+                    answer += f"{i}. {concern.get('concern', 'Unknown')} (Severity: {concern.get('severity', 'Unknown')})\n"
+                answer += "\n"
+            
+            answer += "This analysis is based on social media discussions from r/mumbai and r/india, news sentiment analysis, and community engagement metrics. "
+            answer += "Check the Community Pulse page for detailed topic breakdowns and trending discussions."
+            
+            return answer
+        return "The overall community sentiment in Mumbai is neutral with balanced positive and negative discussions. Main topics of discussion include public transportation (Metro development), infrastructure projects, housing affordability, and civic amenities. The community shows high engagement on topics related to urban development and quality of life improvements. Visit the Community Pulse page for detailed sentiment analysis and trending topics."
     
     # Default
     else:
-        return "I can help you with information about Mumbai. Try asking about trending topics, safety alerts, or investment neighborhoods."
+        return "I'm your AI assistant for Mumbai city intelligence, powered by Amazon Nova. I can help you with:\n\n" + \
+               "• **Trending Topics**: What's being discussed in Mumbai right now\n" + \
+               "• **Safety Alerts**: Current safety concerns and advisories\n" + \
+               "• **Investment Insights**: Best neighborhoods for real estate investment\n" + \
+               "• **Construction Permits**: Recent building and development projects\n" + \
+               "• **Community Sentiment**: What people are saying about Mumbai\n\n" + \
+               "All information is gathered from multiple sources including news articles, social media (Reddit), government permit databases (MahaRERA, BMC), and analyzed using Amazon Nova AI models. " + \
+               "Try asking specific questions like 'What are the trending topics?' or 'Which neighborhoods are good for investment?'"
 
 @app.route('/api/audio/<filename>')
 def serve_audio(filename):

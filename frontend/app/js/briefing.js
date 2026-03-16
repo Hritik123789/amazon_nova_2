@@ -67,14 +67,12 @@ function displayBriefing(briefing) {
         
         content.innerHTML = formattedText;
         
-        // Add sources section if available
-        if (briefing.sections && briefing.sections.length > 0) {
-            const sourcesHtml = createSourcesSection(briefing.sections);
-            content.innerHTML += sourcesHtml;
-        }
+        // Add sources section - ALWAYS show sources
+        const sourcesHtml = createSourcesSection(briefing.sections);
+        content.innerHTML += sourcesHtml;
     }
     
-    // Enable play button if audio is available
+    // Enable play button
     const playBtn = document.getElementById('playBriefingBtn');
     if (playBtn) {
         playBtn.disabled = false;
@@ -159,14 +157,12 @@ async function playBriefing() {
         return;
     }
     
-    // Try to get audio from server
+    // Play the audio file
     try {
         playBtn.disabled = true;
         playBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading Audio...';
         
-        // Check if audio file exists
         const audioUrl = `${API_CONFIG.BASE_URL}/api/audio/morning_briefing.mp3`;
-        
         audioElement = new Audio(audioUrl);
         
         audioElement.onloadeddata = () => {
@@ -181,14 +177,14 @@ async function playBriefing() {
         
         audioElement.onerror = () => {
             playBtn.disabled = false;
-            playBtn.innerHTML = '<i class="fas fa-play"></i> Play Audio Briefing';
-            alert('Audio not available. The briefing text is displayed above.');
+            playBtn.innerHTML = '<i class="fas fa-play"></i> Audio Unavailable';
+            alert('Audio file not found. Run: python agents/generate_briefing_audio.py');
         };
         
     } catch (error) {
         console.error('Error playing audio:', error);
         playBtn.disabled = false;
-        playBtn.innerHTML = '<i class="fas fa-play"></i> Play Audio Briefing';
+        playBtn.innerHTML = '<i class="fas fa-play"></i> Audio Unavailable';
         alert('Unable to play audio. Please check your connection.');
     }
 }
@@ -246,14 +242,22 @@ async function loadNotifications() {
 
 // Utility functions
 function createSourcesSection(sections) {
-    const newsSection = sections.find(s => s.type === 'news');
-    const permitSection = sections.find(s => s.type === 'permits');
+    const newsSection = sections ? sections.find(s => s.type === 'news') : null;
+    const permitSection = sections ? sections.find(s => s.type === 'permits') : null;
+    const socialSection = sections ? sections.find(s => s.type === 'social') : null;
     
     let sourcesHtml = '<div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">';
     sourcesHtml += '<h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 1rem; color: var(--primary);">📚 Data Sources</h3>';
     sourcesHtml += '<div style="display: grid; gap: 1rem;">';
     
-    if (newsSection && newsSection.items_count > 0) {
+    // News sources - always show if news section exists
+    if (newsSection) {
+        const sources = newsSection.sources || [
+            {name: "Mid-Day", url: "https://www.mid-day.com/mumbai"},
+            {name: "Hindustan Times", url: "https://www.hindustantimes.com/cities/mumbai-news"},
+            {name: "Times of India", url: "https://timesofindia.indiatimes.com/city/mumbai"}
+        ];
+        
         sourcesHtml += `
             <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 10px; border-left: 3px solid #6366f1;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
@@ -264,17 +268,22 @@ function createSourcesSection(sections) {
                     ${newsSection.items_count} articles from Mumbai news sources
                 </div>
                 <div style="margin-top: 0.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                    <a href="https://www.mid-day.com/mumbai" target="_blank" style="font-size: 0.75rem; color: #6366f1; text-decoration: none;">Mid-Day</a>
-                    <span style="color: var(--gray);">•</span>
-                    <a href="https://www.hindustantimes.com/cities/mumbai-news" target="_blank" style="font-size: 0.75rem; color: #6366f1; text-decoration: none;">Hindustan Times</a>
-                    <span style="color: var(--gray);">•</span>
-                    <a href="https://timesofindia.indiatimes.com/city/mumbai" target="_blank" style="font-size: 0.75rem; color: #6366f1; text-decoration: none;">Times of India</a>
+                    ${sources.map((source, idx) => `
+                        ${idx > 0 ? '<span style="color: var(--gray);">•</span>' : ''}
+                        <a href="${source.url}" target="_blank" style="font-size: 0.75rem; color: #6366f1; text-decoration: none;">${source.name}</a>
+                    `).join('')}
                 </div>
             </div>
         `;
     }
     
-    if (permitSection && permitSection.items_count > 0) {
+    // Permit sources - always show if permit section exists
+    if (permitSection) {
+        const sources = permitSection.sources || [
+            {name: "MahaRERA", url: "https://maharera.maharashtra.gov.in/"},
+            {name: "BMC Portal", url: "https://portal.mcgm.gov.in/"}
+        ];
+        
         sourcesHtml += `
             <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 10px; border-left: 3px solid #10b981;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
@@ -285,15 +294,21 @@ function createSourcesSection(sections) {
                     ${permitSection.items_count} permit activities tracked
                 </div>
                 <div style="margin-top: 0.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                    <a href="https://maharera.maharashtra.gov.in/" target="_blank" style="font-size: 0.75rem; color: #10b981; text-decoration: none;">MahaRERA</a>
-                    <span style="color: var(--gray);">•</span>
-                    <a href="https://portal.mcgm.gov.in/" target="_blank" style="font-size: 0.75rem; color: #10b981; text-decoration: none;">BMC Portal</a>
+                    ${sources.map((source, idx) => `
+                        ${idx > 0 ? '<span style="color: var(--gray);">•</span>' : ''}
+                        <a href="${source.url}" target="_blank" style="font-size: 0.75rem; color: #10b981; text-decoration: none;">${source.name}</a>
+                    `).join('')}
                 </div>
             </div>
         `;
     }
     
-    // Add social media source
+    // Social media source - always show
+    const socialSources = (socialSection && socialSection.sources) || [
+        {name: "r/mumbai", url: "https://www.reddit.com/r/mumbai/"},
+        {name: "r/india", url: "https://www.reddit.com/r/india/"}
+    ];
+    
     sourcesHtml += `
         <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 10px; border-left: 3px solid #f59e0b;">
             <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
@@ -304,9 +319,10 @@ function createSourcesSection(sections) {
                 Social media sentiment and community discussions
             </div>
             <div style="margin-top: 0.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                <a href="https://www.reddit.com/r/mumbai/" target="_blank" style="font-size: 0.75rem; color: #f59e0b; text-decoration: none;">r/mumbai</a>
-                <span style="color: var(--gray);">•</span>
-                <a href="https://www.reddit.com/r/india/" target="_blank" style="font-size: 0.75rem; color: #f59e0b; text-decoration: none;">r/india</a>
+                ${socialSources.map((source, idx) => `
+                    ${idx > 0 ? '<span style="color: var(--gray);">•</span>' : ''}
+                    <a href="${source.url}" target="_blank" style="font-size: 0.75rem; color: #f59e0b; text-decoration: none;">${source.name}</a>
+                `).join('')}
             </div>
         </div>
     `;
