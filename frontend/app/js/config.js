@@ -5,7 +5,7 @@ const API_CONFIG = {
     // In development, it will use localhost
     BASE_URL: window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
         ? 'http://localhost:5000'
-        : 'https://your-backend-url.herokuapp.com',  // ⚠️ CHANGE THIS to your deployed backend URL
+        : 'https://citypulse-backend-rg34.onrender.com',  // Render backend URL
     
     // Endpoints
     ENDPOINTS: {
