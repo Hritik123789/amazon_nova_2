@@ -1,4 +1,4 @@
-// Community Page JavaScript - Fixed Version
+// Community Page JavaScript - Fixed Version v1.1
 
 let communityData = null;
 let selectedTopic = null;
