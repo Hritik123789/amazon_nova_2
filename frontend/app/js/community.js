@@ -49,24 +49,27 @@ function displayTopics(data) {
 
     topicsGrid.innerHTML = topics.map((topic, index) => `
         <div class="topic-card clickable" onclick="showTopicDetails(${index})" data-topic-index="${index}">
-            <div class="topic-header">
-                <div class="topic-title">${formatTopicName(topic.topic)}</div>
-                <div class="topic-score">${topic.trend_score}/10</div>
+            <div class="topic-card-header">
+                <div class="topic-card-name">${formatTopicName(topic.topic)}</div>
+                <div class="topic-card-score">${topic.trend_score.toFixed(1)}</div>
             </div>
-            <div class="topic-category">${topic.category}</div>
-            <div class="topic-engagement">
-                <div class="engagement-item">
-                    <i class="fas fa-comments"></i>
-                    <span>${topic.engagement_metrics?.total_posts || 0} posts</span>
+            <div class="topic-card-stats">
+                <div class="topic-card-stat">
+                    <i class="fas fa-tag"></i>
+                    <span>${topic.category}</span>
                 </div>
-                <div class="engagement-item">
-                    <i class="fas fa-heart"></i>
-                    <span>${topic.engagement_metrics?.total_engagement || 0} interactions</span>
+                <div class="topic-card-stat">
+                    <i class="fas fa-smile"></i>
+                    <span>${topic.sentiment}</span>
                 </div>
             </div>
-            <div style="margin-top: 1rem; text-align: right;">
+            <p style="color: var(--gray); margin-top: 1rem; font-size: 0.875rem;">${topic.description}</p>
+            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center;">
+                <span style="color: var(--gray); font-size: 0.875rem;">
+                    <i class="fas fa-comments"></i> ${extractMentions(topic.description)} mentions
+                </span>
                 <span style="color: var(--primary); font-size: 0.875rem; font-weight: 600;">
-                    View details <i class="fas fa-arrow-right"></i>
+                    Click for details <i class="fas fa-arrow-right"></i>
                 </span>
             </div>
         </div>
@@ -373,72 +376,90 @@ function formatTopicName(topic) {
         .replace(/\bApi\b/g, 'API');
 }
 
+// Extract mentions from description
+function extractMentions(description) {
+    const match = description.match(/(\d+)\s+times/);
+    return match ? match[1] : '0';
+}
+
 // Create cluster visualization
 function createClusterVisualization(data) {
-    const canvas = document.getElementById('clusterCanvas');
-    if (!canvas) return;
+    const clusterViz = document.getElementById('clusterViz');
+    if (!clusterViz) return;
 
-    const ctx = canvas.getContext('2d');
-    const container = canvas.parentElement;
-    canvas.width = container.clientWidth;
-    canvas.height = container.clientHeight;
+    const clusters = data?.insights?.topic_clusters?.clusters || [];
 
-    const topics = data?.insights?.trending_topics || [];
-    if (topics.length === 0) return;
+    if (clusters.length === 0) {
+        clusterViz.innerHTML = '<p style="text-align: center; color: var(--gray); padding: 3rem;">No cluster data available.</p>';
+        return;
+    }
 
-    // Create clusters based on categories
-    const clusters = {};
-    topics.forEach(topic => {
-        const category = topic.category || 'General';
-        if (!clusters[category]) {
-            clusters[category] = [];
-        }
-        clusters[category].push(topic);
-    });
+    const topClusters = clusters.slice(0, 5);
+    const svgWidth = clusterViz.clientWidth;
+    const svgHeight = 500;
+    const centerX = svgWidth / 2;
+    const centerY = svgHeight / 2;
+    const radius = 150;
 
-    const colors = ['#6366f1', '#8b5cf6', '#ec4899', '#f59e0b', '#10b981', '#ef4444'];
-    let colorIndex = 0;
+    let svg = `<svg width="${svgWidth}" height="${svgHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}">`;
 
-    Object.keys(clusters).forEach(category => {
-        const color = colors[colorIndex % colors.length];
-        const clusterTopics = clusters[category];
-        
-        // Position clusters in a circle
-        const centerX = canvas.width / 2 + Math.cos(colorIndex * 2 * Math.PI / Object.keys(clusters).length) * 100;
-        const centerY = canvas.height / 2 + Math.sin(colorIndex * 2 * Math.PI / Object.keys(clusters).length) * 100;
+    // Draw connections
+    topClusters.forEach((cluster1, i) => {
+        topClusters.slice(i + 1).forEach((cluster2, j) => {
+            const angle1 = (i / topClusters.length) * Math.PI * 2 - Math.PI / 2;
+            const angle2 = ((i + j + 1) / topClusters.length) * Math.PI * 2 - Math.PI / 2;
+            const x1 = centerX + Math.cos(angle1) * radius;
+            const y1 = centerY + Math.sin(angle1) * radius;
+            const x2 = centerX + Math.cos(angle2) * radius;
+            const y2 = centerY + Math.sin(angle2) * radius;
 
-        clusterTopics.forEach((topic, index) => {
-            const angle = (index / clusterTopics.length) * 2 * Math.PI;
-            const radius = 30 + topic.trend_score * 3;
-            const x = centerX + Math.cos(angle) * radius;
-            const y = centerY + Math.sin(angle) * radius;
-
-            // Draw topic circle
-            ctx.beginPath();
-            ctx.arc(x, y, 5 + topic.trend_score, 0, 2 * Math.PI);
-            ctx.fillStyle = color + '80';
-            ctx.fill();
-            ctx.strokeStyle = color;
-            ctx.lineWidth = 2;
-            ctx.stroke();
-
-            // Draw connection to center
-            ctx.beginPath();
-            ctx.moveTo(centerX, centerY);
-            ctx.lineTo(x, y);
-            ctx.strokeStyle = color + '40';
-            ctx.lineWidth = 1;
-            ctx.stroke();
+            svg += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="rgba(99, 102, 241, 0.2)" stroke-width="2"/>`;
         });
-
-        // Draw category label
-        ctx.fillStyle = color;
-        ctx.font = '12px Inter, sans-serif';
-        ctx.textAlign = 'center';
-        ctx.fillText(category, centerX, centerY - 20);
-
-        colorIndex++;
     });
+
+    // Draw nodes
+    topClusters.forEach((cluster, i) => {
+        const angle = (i / topClusters.length) * Math.PI * 2 - Math.PI / 2;
+        const x = centerX + Math.cos(angle) * radius;
+        const y = centerY + Math.sin(angle) * radius;
+        const size = 30 + (cluster.trend_score * 3);
+        const color = getColorForTrendScore(cluster.trend_score);
+
+        svg += `
+            <g class="cluster-node" style="cursor: pointer;" onclick="showClusterDetails('${cluster.main_topic}')">
+                <circle cx="${x}" cy="${y}" r="${size}" fill="${color}" opacity="0.3">
+                    <animate attributeName="r" values="${size};${size + 5};${size}" dur="2s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="${x}" cy="${y}" r="${size * 0.7}" fill="${color}" opacity="0.6"/>
+                <text x="${x}" y="${y}" text-anchor="middle" dy="0.3em" fill="white" font-size="12" font-weight="600">
+                    ${formatTopicName(cluster.main_topic).substring(0, 10)}
+                </text>
+                <text x="${x}" y="${y + 20}" text-anchor="middle" fill="white" font-size="10" opacity="0.7">
+                    ${cluster.total_mentions} posts
+                </text>
+            </g>
+        `;
+    });
+
+    svg += '</svg>';
+    clusterViz.innerHTML = svg;
+}
+
+// Show cluster details
+function showClusterDetails(topicName) {
+    const topics = communityData?.insights?.trending_topics || [];
+    const topicIndex = topics.findIndex(t => t.topic === topicName);
+    if (topicIndex >= 0) {
+        showTopicDetails(topicIndex);
+    }
+}
+
+// Get color for trend score
+function getColorForTrendScore(score) {
+    if (score >= 8) return '#6366f1';
+    if (score >= 5) return '#8b5cf6';
+    if (score >= 3) return '#a78bfa';
+    return '#c4b5fd';
 }
 
 // Setup event listeners
