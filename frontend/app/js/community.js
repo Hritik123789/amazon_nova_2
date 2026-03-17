@@ -48,7 +48,7 @@ function displayTopics(data) {
     }
 
     topicsGrid.innerHTML = topics.map((topic, index) => `
-        <div class="topic-card clickable" onclick="showTopicDetails(${index})" data-topic-index="${index}">
+        <div class="topic-card clickable" data-topic-index="${index}">
             <div class="topic-card-header">
                 <div class="topic-card-name">${formatTopicName(topic.topic)}</div>
                 <div class="topic-card-score">${topic.trend_score.toFixed(1)}</div>
@@ -74,6 +74,14 @@ function displayTopics(data) {
             </div>
         </div>
     `).join('');
+
+    // Add click event listeners to topic cards
+    document.querySelectorAll('.topic-card[data-topic-index]').forEach(card => {
+        card.addEventListener('click', (e) => {
+            const index = parseInt(card.getAttribute('data-topic-index'));
+            showTopicDetails(index);
+        });
+    });
 }
 
 // Show topic details in modal
@@ -89,7 +97,7 @@ function showTopicDetails(index) {
         <div class="topic-modal-content">
             <div class="topic-modal-header">
                 <h2>${formatTopicName(topic.topic)}</h2>
-                <button class="close-modal-btn" onclick="closeTopicModal()">
+                <button class="close-modal-btn" data-action="close-topic-modal">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -135,6 +143,9 @@ function showTopicDetails(index) {
 
     document.body.appendChild(modal);
     selectedTopic = topic;
+    
+    // Add event listener for close button
+    modal.querySelector('[data-action="close-topic-modal"]').addEventListener('click', closeTopicModal);
     
     // Track activity
     if (typeof trackActivity === 'function') {
@@ -231,7 +242,7 @@ function displayConcerns(data) {
     }
 
     concernsList.innerHTML = concerns.map((concern, index) => `
-        <div class="concern-item clickable" onclick="showConcernDetails(${index})" data-concern-index="${index}">
+        <div class="concern-item clickable" data-concern-index="${index}">
             <div class="concern-header">
                 <div class="concern-title">${concern.concern}</div>
                 <div class="concern-severity ${concern.severity}">${concern.severity.toUpperCase()}</div>
@@ -251,6 +262,14 @@ function displayConcerns(data) {
             </div>
         </div>
     `).join('');
+
+    // Add click event listeners to concern items
+    document.querySelectorAll('.concern-item[data-concern-index]').forEach(item => {
+        item.addEventListener('click', (e) => {
+            const index = parseInt(item.getAttribute('data-concern-index'));
+            showConcernDetails(index);
+        });
+    });
 }
 
 // Show concern details in modal
@@ -266,7 +285,7 @@ function showConcernDetails(index) {
         <div class="concern-modal-content">
             <div class="concern-modal-header">
                 <h2>${concern.concern}</h2>
-                <button class="close-modal-btn" onclick="closeConcernModal()">
+                <button class="close-modal-btn" data-action="close-concern-modal">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -312,6 +331,9 @@ function showConcernDetails(index) {
     `;
 
     document.body.appendChild(modal);
+    
+    // Add event listener for close button
+    modal.querySelector('[data-action="close-concern-modal"]').addEventListener('click', closeConcernModal);
     
     // Track activity
     if (typeof trackActivity === 'function') {
@@ -426,7 +448,7 @@ function createClusterVisualization(data) {
         const color = getColorForTrendScore(cluster.trend_score);
 
         svg += `
-            <g class="cluster-node" style="cursor: pointer;" onclick="showClusterDetails('${cluster.main_topic}')">
+            <g class="cluster-node" style="cursor: pointer;" data-topic-name="${cluster.main_topic}">
                 <circle cx="${x}" cy="${y}" r="${size}" fill="${color}" opacity="0.3">
                     <animate attributeName="r" values="${size};${size + 5};${size}" dur="2s" repeatCount="indefinite"/>
                 </circle>
@@ -443,6 +465,14 @@ function createClusterVisualization(data) {
 
     svg += '</svg>';
     clusterViz.innerHTML = svg;
+
+    // Add click event listeners to cluster nodes
+    document.querySelectorAll('.cluster-node[data-topic-name]').forEach(node => {
+        node.addEventListener('click', (e) => {
+            const topicName = node.getAttribute('data-topic-name');
+            showClusterDetails(topicName);
+        });
+    });
 }
 
 // Show cluster details
