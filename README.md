@@ -9,7 +9,7 @@
 
 **CityPulse** is an AI-powered hyperlocal intelligence platform that monitors your neighborhood's digital footprint and provides actionable insights that actually affect your daily life. Built entirely with Amazon Nova AI models, it combines agentic AI, multimodal understanding, and UI automation to deliver proactive community intelligence.
 
-[🎥 Demo Video](https://youtu.be/mmysjvuhW8A?si=0bR40UM8jEHubIEZ) | [📖 Documentation](docs/) | [🚀 Live Demo](https://amazon-nova-2-git-main-hritik123789s-projects.vercel.app/)
+[🎥 Demo Video](https://youtu.be/mmysjvuhW8A?si=0bR40UM8jEHubIEZ) | [🚀 Live Demo](https://amazon-nova-2-git-main-hritik123789s-projects.vercel.app/)
 
 ---
 
