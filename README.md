@@ -36,6 +36,8 @@ Unlike traditional chatbots or document processors, CityPulse is a **proactive i
 
 ## 🏗️ Architecture
 
+![CityPulse Architecture](docs/architecture-diagram.svg)
+
 ### Multi-Agent System (12 Autonomous Agents)
 
 **Phase 1: Core Data Collection (6 Agents)**
