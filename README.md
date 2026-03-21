@@ -487,7 +487,7 @@ Built with ❤️ for the Amazon Nova Hackathon 2026
 
 For questions or feedback:
 - GitHub Issues: [Create an issue](https://github.com/Hritik123789/amazon_nova_2/issues)
-- Email: [your-email@example.com]
+- Email: [bhatthritik17@gmail.com]
 
 ---
 
